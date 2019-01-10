@@ -50,5 +50,18 @@ The genome of western redcedar is estimated to be 12.5 Gbp [@Hizume_2001; @Ohri_
 
 ![The size of the western redcedar genome is estimated to be 9.8 Gbp by GenomeScope.](redcedar/genomescope.png){#fig:genomescope}
 
+Half of the 7.95 Gbp draft genome is assembled using ABySS, Tigmint, and ARCS in 1,035 scaffolds that are at least 2.31 Mbp. The largest scaffold is 16.3 Mbp. Assembly metrics for five stages of assembly are shown in @tbl:contiguity. Unitigs are assembled from *k*-mers. Contigs use paired-end reads to resolve and expand repeats. Scaffolds order and orient the contigs into scaffolds using mate pairs. Tigmint and ARCS respectively correct misassemblies and scaffold the assembly, both using linked reads.
+
+Table: The assembly contiguity metrics are shown for five stages of assembly. The NG50 is calculated using a genome size of 10 Gbp, rounded up from the 9.8 Gbp estimated by GenomeScope. The number of scaffolds and draft genome size includes sequences that are at least 1 kbp in size. {#tbl:contiguity}
+
+| Stage     | N50      | NG50      | Largest  | Size     | L50     | LG50    | Scaffolds   |
+|:----------|---------:|----------:|---------:|---------:|--------:|--------:|------------:|
+| Unitigs   | 6.98 kbp |  4.20 kbp |  119 kbp | 7.52 Gbp | 294,835 | 524,000 |   1,811,335 |
+| Contigs   | 17.8 kbp |  12.9 kbp |  166 kbp | 7.97 Gbp | 128,893 | 196,169 |     882,457 |
+| Scaffolds |  377 kbp |   280 kbp | 2.77 Mbp | 7.95 Gbp |   6,320 |   9,479 |      95,754 |
+| Tigmint   |  375 kbp |   278 kbp | 2.77 Mbp | 7.95 Gbp |   6,355 |   9,531 |      96,557 |
+| ARCS      | 2.31 Mbp |  1.71 Mbp | 16.3 Mbp | 7.95 Gbp |   1,035 |   1,551 |      67,895 |
+
+\newpage
 
 # References
