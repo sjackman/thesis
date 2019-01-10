@@ -7,7 +7,7 @@ all: redcedar.pdf
 
 # Download the citation style language (CSL)
 thesis.csl:
-	curl -o $@ https://www.zotero.org/styles/springer-vancouver-brackets
+	curl -o $@ https://www.zotero.org/styles/bioinformatics
 
 # Render Markdown to HTML using Pandoc
 %.html: %.md
