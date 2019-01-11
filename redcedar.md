@@ -62,6 +62,19 @@ Table: The assembly contiguity metrics are shown for five stages of assembly. Th
 | Tigmint   |  375 kbp |   278 kbp | 2.77 Mbp | 7.95 Gbp |   6,355 |   9,531 |      96,557 |
 | ARCS      | 2.31 Mbp |  1.71 Mbp | 16.3 Mbp | 7.95 Gbp |   1,035 |   1,551 |      67,895 |
 
+BUSCO determines that 60% of core single-copy genes are present in the assembled genome, either in full or partially, shown in @tbl:busco. The 30 species represented in the BUSCO embryophyta database include 29 angiosperm and one moss. Since gymnosperm are not represented in the database, some of these core genes may have been lost in gymnosperm, and these results may be an underestimate.
+
+Table: 870 (60%) of core single-copy genes are present, either fully or partially. {#tbl:busco}
+
+| Category                     | Percent | Count | 
+|------------------------------|--------:|------:|
+| Complete                     | 53.9%   |   776 |
+| Complete and single-copy     | 50.1%   |   722 |
+| Complete and duplicated      |  3.8%   |    54 |
+| Fragmented                   |  6.5%   |    94 |
+| Missing                      | 39.6%   |   570 |
+| **Total**                    |  100%   | 1,440 |
+
 \newpage
 
 # References
