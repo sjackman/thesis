@@ -3,7 +3,7 @@ pandoc_opt=-Fpandoc-crossref -Fpandoc-citeproc
 .DELETE_ON_ERROR:
 .SECONDARY:
 
-all: redcedar.pdf
+all: introduction.pdf redcedar.pdf
 
 # Download the citation style language (CSL)
 thesis.csl:
