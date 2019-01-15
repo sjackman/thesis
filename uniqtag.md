@@ -7,7 +7,7 @@ author: 'Shaun D. Jackman, Joerg Bohlmann, Inanc Birol'
 
 When working on an ongoing genome sequencing and assembly project, it is rather inconvenient when gene identifiers change from one build of the assembly to the next. The gene labelling system described here, UniqTag, addresses this common challenge. UniqTag assigns a unique identifier to each gene that is a representative *k*-mer, a string of length *k*, selected from the sequence of that gene. Unlike serial numbers, these identifiers are stable between different assemblies and annotations of the same data without requiring that previous annotations be lifted over by sequence alignment. We assign UniqTag identifiers to ten builds of the Ensembl human genome spanning eight years to demonstrate this stability.
 
-The implementation of UniqTag in Ruby and an R package are available at <https://github.com/sjackman/uniqtag>. The R package is also available from CRAN: `install.packages("uniqtag")`. Supplementary material and code to reproduce it is available at <https://github.com/sjackman/uniqtag-paper>.
+The implementation of UniqTag in Ruby and an R package are available at <https://github.com/sjackman/uniqtag>. The R package is also available from CRAN: `install.packages("uniqtag")`.
 
 # Introduction
 
@@ -68,7 +68,7 @@ human genome and nine other builds, the number of common gene and protein
 identifiers between builds, and the number of genes with peptide sequences that
 are identical between builds.](uniqtag/ensembl.png)
 
-The stability of the UniqTag is insensitive to the size of the UniqTag identifier for values of *k* between 8 and 50 amino acids, shown in Fig.&nbsp;2. The data for both figures are shown in Table&nbsp;A in S1&nbsp;File.
+The stability of the UniqTag is insensitive to the size of the UniqTag identifier for values of *k* between 8 and 50 amino acids, shown in Fig.&nbsp;2.
 
 ![The number of common UniqTag identifiers between build 75 of the Ensembl
 human genome and nine other builds for different values of *k*.](uniqtag/k.png)
@@ -111,10 +111,3 @@ The authors thank Nathaniel Street for his enthusiastic feedback, the SMarTFores
 [cunningham2015ensembl]: http://dx.doi.org/10.1093/nar/gku1010
 [dang2012shs]: http://www.nist.gov/manuscript-publication-search.cfm?pub_id=910977
 [wain2002guidelines]: http://dx.doi.org/10.1006/geno.2002.6748
-
-# Supporting Information Legends
-
-S1 File.
-  : The data used to plot Figs. 1 and 2, also available in tab-separated values (TSV) format (**Table&nbsp;A**).
-    The source of UniqTag 1.0, implemented in Ruby (**Listing&nbsp;A**).
-    The Makefile script that calculates the data used to plot Figs. 1 and 2 (**Listing&nbsp;B**).
