@@ -120,6 +120,18 @@ in Bioinformatics
 
 ## Abbreviations
 
+| **BED**: browser extensible data
+| **bp**: base pair
+| **Gbp**: gigbase pair
+| **GIAB**: Genome in a Bottle
+| **kbp**: kilobase pair
+| **Mbp**: megabase pair
+| **NCBI**: National Center for Biotechnology Information
+| **RAM**: random access memory
+| **RSS**: resident set size
+| **SMS**: single-molecule sequencing
+| **SRA**: Sequence Read Archive
+
 ## Acknowledgements
 
 ## Dedication

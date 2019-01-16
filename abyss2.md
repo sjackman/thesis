@@ -16,6 +16,8 @@ With ABySS 1.0, we originally showed that assembling the human genome using shor
 
 We benchmarked ABySS 2.0 human genome assembly using a Genome in a Bottle dataset of 250 bp Illumina paired-end and 6 kbp mate-pair libraries from a single individual. Our assembly yielded a NG50 (NGA50) scaffold contiguity of 3.5 (3.0) Mbp using less than 35 GB of RAM. This is a modest memory requirement by today’s standards, and is often available on a single computer. We also investigate the use of BioNano Genomics and 10x Genomics’ Chromium data to further improve the scaffold NG50 (NGA50) of this assembly to 42 (15) Mbp.
 
+ABySS 2.0 is available online at <https://github.com/bcgsc/abyss>.
+
 # Introduction
 
 *De novo* genome assembly remains a challenging problem, especially for large and complex genomes. The problem refers to reconstructing the chromosome sequence(s) for a genome from sequencing reads, which are orders of magnitude shorter than the target genome [@Nagarajan_2013]. In practice, current state-of-the-art assemblers do not fully reconstruct the chromosome sequences but rather reduce the input sequencing reads to a smaller number of non-redundant, more contiguous sequences (contigs). If further linkage information is available, such as in the form of paired end reads or physical maps, these contigs may be ordered and oriented with respect to each other and reported as scaffolds, where there may be undetermined sequences (represented as ‘N’s) between contigs. The quality of returned contigs and scaffolds are conventionally measured by the contiguity of the assembled sequences. Often assembly algorithms are also validated using data from resequencing experiments, where assembled sequences are compared against a reference genome for their correctness in addition to their contiguity [@Gurevich_2013].
@@ -182,9 +184,5 @@ The FASTA files for the assemblies of the HG004 Genome in a Bottle data may be d
 # Acknowledgements
 
 The research presented here was funded by the National Human Genome Research Institute of the National Institutes of Health (under award number R01HG007182), with additional support provided by Intel, Genome Canada, Genome British Columbia, and the British Columbia Cancer Foundation. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or other funding organizations.  We would also like to thank Martin Krzywinski for his help with the data visualization in the ideogram and Circos figures.
-
-# Disclosure Declaration
-
-The authors declare that they have no conflicts of interest with respect to this work.
 
 # References

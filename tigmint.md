@@ -21,6 +21,8 @@ To demonstrate the effectiveness of Tigmint, we applied it to assemblies of a hu
 
 Scaffolding an assembly that has been corrected with Tigmint yields a final assembly that is both more correct and substantially more contiguous than an assembly that has not been corrected. Using single-molecule sequencing in combination with linked reads enables a genome sequence assembly that achieves both a high sequence contiguity as well as high scaffold contiguity, a feat not currently achievable with either technology alone.
 
+Tigmint is available online at <https://github.com/bcgsc/tigmint>.
+
 # Background
 
 Assemblies of short read sequencing data are easily confounded by repetitive sequences larger than the fragment size of the sequencing library. When the size of a repeat exceeds the library fragment size, the contig comes to an end in the best case, or results in misassembled sequence in the worst case. Misassemblies not only complicate downstream analyses, but also limit the contiguity of the assembly. Each incorrectly assembled sequence prevents joining that chimeric sequence to its true neighbours during assembly scaffolding, illustrated in @fig:diagram.
@@ -170,26 +172,6 @@ Linked read sequencing has two advantages over paired-end and mate-pair reads to
 
 Using single-molecule sequencing in combination with linked reads enables a genome sequence assembly that achieves both a high sequence contiguity as well as high scaffold contiguity, a feat not currently achievable with either technology alone. Although paired-end and mate-pair sequencing is often used to polish a long-read assembly to improve its accuracy at the nucleotide level, it is not well suited to polish the repetitive sequence of the assembly, where the reads align ambiguously. Linked reads would resolve this mapping ambiguity and are uniquely suited to polishing an assembly of long reads, an opportunity for further research in the hybrid assembly of long and linked reads.
 
-# Availability and requirements
-
-| **Project name:** Tigmint
-| **Project home page:** <https://github.com/bcgsc/tigmint>
-| **Operating system:** Platform independent
-| **Programming language:** Python
-| **License:** GNU GPL v3.0
-
-# Abbreviations
-
-| BED: browser extensible data
-| bp: base pair
-| GIAB: Genome in a Bottle
-| kbp: kilobase pair
-| NCBI: National Center for Biotechnology Information
-| RAM: random access memory
-| RSS: resident set size
-| SMS: single-molecule sequencing
-| SRA: Sequence Read Archive
-
 # Availability of data and material
 
 The script to run the data analysis is available online at <https://github.com/sjackman/tigmint-data>. Tigmint may be installed using PyPI, Bioconda [@Gr_ning_2018], Homebrew, or Linuxbrew [@Jackman_2016].
@@ -226,18 +208,6 @@ SDJ, BPV, and HM implemented ABySS 2.
 JC implemented JupiterPlot and created the JupiterPlot figure.
 JB, SJMJ, and IB supervised the project and secured funding.
 All authors provided critical feedback of the manuscript, and read and approved the final manuscript.
-
-# Ethics approval and consent to participate
-
-Not applicable.
-
-# Competing interests
-
-The authors declare that they have no competing interests.
-
-# Consent for publication
-
-Not applicable.
 
 # Funding
 
