@@ -9,8 +9,6 @@ figPrefix: "Fig."
 tblPrefix: ["Table", "Tables"]
 ---
 
-# Abstract
-
 When working on an ongoing genome sequencing and assembly project, it is rather inconvenient when gene identifiers change from one build of the assembly to the next. The gene labelling system described here, UniqTag, addresses this common challenge. UniqTag assigns a unique identifier to each gene that is a representative *k*-mer, a string of length *k*, selected from the sequence of that gene. Unlike serial numbers, these identifiers are stable between different assemblies and annotations of the same data without requiring that previous annotations be lifted over by sequence alignment. We assign UniqTag identifiers to ten builds of the Ensembl human genome spanning eight years to demonstrate this stability.
 
 The implementation of UniqTag in Ruby and an R package are available at <https://github.com/sjackman/uniqtag>. The R package is also available from CRAN: `install.packages("uniqtag")`.
