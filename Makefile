@@ -3,7 +3,17 @@ pandoc_opt=-Fpandoc-crossref -Fpandoc-citeproc
 .DELETE_ON_ERROR:
 .SECONDARY:
 
-all: introduction.pdf abyss2.pdf tigmint.pdf uniqtag.pdf redcedar.pdf
+all: frontmatter.pdf introduction.pdf abyss2.pdf tigmint.pdf uniqtag.pdf whitespruce.pdf redcedar.pdf
+
+# Aggregate the chapters into a single document.
+thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md whitespruce.md redcedar.md backmatter.md
+	gsed -E \
+		-e '1,/^\\mainmatter/b' \
+		-e 's/^#/##/' \
+		-e 's/^title: "(.*)"/# \1/' \
+		-e '/^author:/,/^---/d' \
+		-e '/^## References/d' \
+		-e '/^---/d' $^ >$@
 
 # Download the citation style language (CSL)
 thesis.csl:
