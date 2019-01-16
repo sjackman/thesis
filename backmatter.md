@@ -1,5 +1,4 @@
 \backmatter
 
-title: "References"
-
+\chapter{References}
 \chaptermark{References}

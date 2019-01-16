@@ -1,5 +1,6 @@
 ---
 title: "Genome Assembly of Western Redcedar (*Thuja plicata*) Using Linked Reads"
+chaptermark: "Genome Assembly of Western Redcedar"
 author: [Shaun D. Jackman]
 bibliography: thesis.bib
 csl: thesis.csl

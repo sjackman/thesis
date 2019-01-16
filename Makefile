@@ -11,6 +11,7 @@ thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md whites
 		-e '1,/^\\mainmatter/b' \
 		-e 's/^#/##/' \
 		-e 's/^title: "(.*)"/# \1/' \
+		-e 's/^chaptermark: "(.*)"/\\chaptermark{\1}/' \
 		-e '/^author:/,/^---/d' \
 		-e '/^## References/d' \
 		-e '/^---/d' $^ >$@

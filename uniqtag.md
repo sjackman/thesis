@@ -1,5 +1,6 @@
 ---
 title: "UniqTag: Content-derived unique and stable identifiers for gene annotation"
+chaptermark: "UniqTag"
 author: [Shaun D. Jackman, Joerg Bohlmann, Inanc Birol]
 bibliography: thesis.bib
 csl: thesis.csl
