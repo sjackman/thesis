@@ -1,5 +1,5 @@
 ---
-title: 'ABySS 2.0: Resource-Efficient Assembly of Large Genomes using a Bloom Filter'
+title: "ABySS 2.0: Resource-Efficient Assembly of Large Genomes using a Bloom Filter"
 author: [Shaun D Jackman*, Benjamin P Vandervalk*, Hamid Mohamadi, Justin Chu, Sarah Yeo, S Austin Hammond, Golnaz Jahesh, Hamza Khan, Lauren Coombe, Rene L Warren, Inanc Birol]
 bibliography: thesis.bib
 csl: thesis.csl
@@ -8,8 +8,6 @@ eqnPrefix: "Equation"
 figPrefix: "Fig."
 tblPrefix: ["Table", "Tables"]
 ---
-
-\* SDJ and BPV are joint first authors and are listed in alphabetical order.
 
 # Abstract
 

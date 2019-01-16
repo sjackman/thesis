@@ -81,6 +81,4 @@ Table: 870 (60%) of core single-copy genes are present, either fully or partiall
 | Missing                      | 39.6%   |   570 |
 | **Total**                    |  100%   | 1,440 |
 
-\newpage
-
 # References

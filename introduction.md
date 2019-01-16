@@ -9,8 +9,6 @@ figPrefix: "Fig."
 tblPrefix: ["Table", "Tables"]
 ---
 
-# Introduction
-
 Genome sequence assembly is an important open problem of bioinformatics. More contiguous genome assemblies expand the biological questions that may be answered from the assembly. To annotate a gene requires that the gene be assembled into a single scaffold. Comparison of gene synteny between species requires that adjacent genes be assembled into a single scaffold. These biological questions and many others are hampered by a fragmented assembly. Whole genome short read sequencing data is a cost effective means of providing the bulk of the data for a genome sequencing project. An assembly of only short read sequencing data however is confounded by repeats. Advances in sequencing technology provide long distance information that may be used to resolve repeats, but the data produced by these revolutionary technologies are often significantly different in nature than the technologies that came before. Existing algorithms and software must be adapted to benefit from these new sources of genomic information.
 
 Two recent advances in sequencing technology are able to provide long-range genomic information: single-molecule sequencing [@Rusk_2009] and linked reads [@Eisenstein_2015]. Each technology has its own characteristic merits and challenges.
@@ -26,3 +24,5 @@ A number of algorithms capable of assembling genomes using only single-molecule 
 Short-read sequencing is currently more cost effective than long read sequencing. Large genome assembly projects constrained by cost continue to rely on short-read sequencing for the bulk of the sequencing depth. To achieve the contiguity desired of an assembly, additional sequencing methods must be used to provide the long-range genomic information.
 
 Three conifer genomes have been assembled, all 20 Gbp and larger: loblolly pine (*Pinus taeda*) [@Zimin_2014], Norway spruce (*Picea abies*) [@Nystedt_2013], and white spruce (*Picea glauca*) [@Birol_2013; @Warren_2015]. Few assemblers are capable of assembling genomes of this size. The loblolly pine genome was assembled using MaSuRCA [@Zimin_2013]. The Norway spruce genome used a hierarchical sequencing strategy and was assembled using commercial software from CLC bio (<http://clcbio.com>). The white spruce genome was assembled using ABySS [@Simpson_2009].
+
+# References
