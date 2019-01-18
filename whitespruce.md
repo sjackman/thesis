@@ -98,7 +98,7 @@ The assembly and annotation metrics for the plastid and mitochondrial genomes ar
 | Protein coding genes (mRNA)     | 74 (72)         | 106 (51)      |
 | Ribosomal RNA genes (rRNA)      | 4 (4)           | 8 (3)         |
 | Transfer RNA genes (tRNA)       | 36 (32)         | 29 (20)       |
-| Open reading frames (ORF) $\geq$ 300 bp | NA      | 1065          |
+| Open reading frames (ORF) $\geq$ 300 bp | 5       | 1065          |
 | Coding genes containing introns | 8               | 5             |
 | Introns in coding genes         | 9               | 7             |
 | tRNA genes containing introns   | 6               | 0             |
