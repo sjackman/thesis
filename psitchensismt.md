@@ -1,16 +1,15 @@
 ---
 title: "Largest Complete Mitochondrial Genome of a Gymnosperm, Sitka Spruce (*Picea sitchensis*), Assembled using Long Reads"
+chaptermark: "Mitochondrial Genome of Sitka Spruce"
 author: [Shaun D. Jackman, Lauren Coombe, René L. Warren, Stephen Pleasance, Robin J. Coope, Joerg Bohlmann, Steven J. M. Jones, Inanc Birol]
-bibliography: psitchensismt.bib
-csl: psitchensismt.csl
+bibliography: thesis.bib
+csl: thesis.csl
 rangeDelim: "&ndash;"
 eqnPrefix: "Equation"
 figPrefix: "Fig."
 tblPrefix: ["Table", "Tables"]
 keywords: [mitochondrion, genome, assembly, plant, gymnosperm, conifer, spruce, organelle, Oxford, Nanopore, Illumina, 10x Genomics, Chromium, linked reads]
 ---
-
-# Abstract
 
 Plant mitochondrial genomes vary widely in size. Although many plant mitochondrial genomes have been sequenced and assembled, the vast majority are of angiosperms, and few are of gymnosperms. Most plant mitochondrial genomes are smaller than a megabase, with a few notable exceptions. We have sequenced and assembled the 5.5 Mbp mitochondrial genome of Sitka spruce (*Picea sitchensis*), the largest complete mitochondrial genome of a gymnosperm. We sequenced the whole genome using Oxford Nanopore MinION, and then identified contigs of mitochondrial origin assembled from these long reads. The assembly graph shows a multipartite genome structure, composed of one smaller 168 kbp circular segment of DNA, and a larger 5.4 Mbp component with a branching structure. The branching points of the assembly graph may represent active sites of recombination, and give insight into an underlying complex linear branching physical genome structure.
 
@@ -46,7 +45,7 @@ We reviewed splice sites, and adjusted their position to agree with the expected
 
 The mitochondrial genome of Sitka spruce is 5.52 Mbp assembled in 13 segments, and has a GC content of 44.7%. The genome assembly is composed of two components: a 168 kbp circular segment, and a larger 5.36 Mbp component composed of 12 segments, visualized by Bandage [@Wick_2015] in @fig:genome. The two smallest segments (labeled 12 and 13) have an estimated copy number of two based on their depth of sequencing coverage, and all other segments have similar depth of coverage, assumed to represent single copy. The single-copy segments range in size from 84 kbp to 1.65 Mbp. The two repeat segments are 24 kbp and 27 kbp. No sequence variation is evident in these repeats. An absence of variation in the repeat implies that they may be involved in active recombination [@Mar_chal_2010]. Though 10% of reads are larger than 24 kbp, no reads fully span these repeats.
 
-![The assembly graph of the mitochondrial genome of Sitka spruce. Each segment is labeled with its size and named 01 through 13 by rank of size.](figures/genome.png){#fig:genome}
+![The assembly graph of the mitochondrial genome of Sitka spruce. Each segment is labeled with its size and named 01 through 13 by rank of size.](psitchensismt/genome.png){#fig:genome}
 
 The genome is composed of 1.7% (93 kbp) of genes with known function, 9.5% (524 kbp) of 2,499 ORFs (at least 90 bp), 3.7% (205 kbp) of repeats, and 85.1% unclassified sequence. Of the ORFs, 468 are at least 300 bp (100 amino acids) in size and compose 3.6% (202 kbp) of the genome. 23 ORFs (12 ORFs at least 300 bp) have a significant (E < 0.001) BLASTP hit to the nr database. The nuclear repeat LTR/Gypsy compose 51% of the repeat sequence, LTR/Copia compose 7%, simple repeat sequence compose 34%, low complexity compose 3%, and 5% are other repeat sequences. Plastid-derived sequence compose 0.25% (14 kbp) in 24 segments. The 36-bp Bpu repeat sequence is present in roughly 500 copies in *Cycas taitungensis* and roughly 100 copies in *Ginkgo biloba* [@Guo_2016]. We find only a single full-length copy with four mismatches in Sitka spruce, similar to *Welwitschia mirabilis*.
 
@@ -54,7 +53,7 @@ The genome is composed of 1.7% (93 kbp) of genes with known function, 9.5% (524 
 
 The mitochondrial genome of Sitka spruce has 41 distinct protein coding genes with known function, 3 distinct rRNA genes (@tbl:rrna), 27 distinct tRNA genes representing 18 distinct anticodons (@tbl:trna). The relative order and orientation of these genes are shown in @fig:genes. The 41 known protein coding genes found in the gymnosperm mitochondria *Cycas taitungensis* [@Chaw_2008] and *Ginkgo biloba* [@Guo_2016] are also found in Sitka. The 29 introns, 16 cis-spliced and 13 trans-spliced, are found in 10 protein coding genes, two pseudogenes, and one plastid-derived tRNA (@tbl:introns).
 
-![The order, orientation, and size of the genes of Sitka spruce. Each box is proportional to the size of the gene including introns, except that genes smaller than 200 nucleotides are shown as 200 nucleotides. Intergenic regions are not to scale.](figures/genes.png){#fig:genes}
+![The order, orientation, and size of the genes of Sitka spruce. Each box is proportional to the size of the gene including introns, except that genes smaller than 200 nucleotides are shown as 200 nucleotides. Intergenic regions are not to scale.](psitchensismt/genes.png){#fig:genes}
 
 Four open reading frames (937, 508, 368, and 214 amino acids) contain an organellar DNA polymerase type B (DNA_pol_B_2) Pfam family [@El_Gebali_2018]. The largest also contains a segment homologous to the structural maintenance of chromosome (SMC_N) Pfam family, which includes the *RecF* and *RecN* proteins involved in DNA recombination. We hypothesize that this ORF may be involved in recombination dependent replication of mitochondrial DNA [@Gualberto_2014]. These ORFs have homology to DNA polymerase genes found in the mitochondria of *Picea glauca* and the angiosperms *Cocos nucifera*, *Daucus carota*, *Helianthus annuus*, and *Silene vulgaris*. Two open reading frames (781 and 560 amino acids) contain an RNA polymerase (RNA_pol) domain. These ORFs have homology to DNA-dependent RNA polymerase genes found in the mitochondria of *Picea glauca* and the angiosperms *Beta vulgaris*, *Cocos nucifera*, *Daucus carota*, and *Phoenix dactylifera*. The two largest genes of the Sitka spruce mitochondrial genome are these putative DNA and RNA polymerase genes.
 
@@ -162,7 +161,7 @@ Table: Intron content of four gymnosperms. Sitka spruce has 29 introns, 16 cis-s
 
 The splice site motifs of the 14 cis-spliced genes of the Sitka spruce mitochondrial genome are shown in @fig:splice, visualized by WebLogo [@Crooks_2004]. Because its position is variable, the bulged adenosine of the 3' splice site, typically found at position -7 or -8, is not readily apparent.
 
-![The 5' and 3' splice site motifs of the 14 cis-spliced genes of Sitka spruce.](figures/splice.png){#fig:splice}
+![The 5' and 3' splice site motifs of the 14 cis-spliced genes of Sitka spruce.](psitchensismt/splice.png){#fig:splice}
 
 # Conclusion
 
