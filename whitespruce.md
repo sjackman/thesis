@@ -77,31 +77,31 @@ The RNA-seq reads were aligned to the annotated mitochondrial genes using BWA-ME
 
 The assembly and annotation metrics for the plastid and mitochondrial genomes are summarized in @tbl:metrics. The plastid genome was assembled into a single circular contig of 123,266 bp containing 114 identified genes: 74 protein coding (mRNA) genes, 36 transfer RNA (tRNA) genes and 4 ribosomal RNA (rRNA) genes, shown in @fig:cpgenes.
 
-Metric                          |Plastid         |Mitochondrion
-------------------------------- |--------------- |-------------
-Number of lanes                 |1 MiSeq lane    |1 HiSeq lane
-Number of read pairs            |4.9 million     |133 million
-Read length                     |300 bp          |150 bp
-Number of merged reads          |3.0 million     |1.4 million
-Median merged read length       |492 bp          |465 bp
-Number of assembled reads       |21 thousand     |377 thousand
-Proportion of organellar reads  |1/140 or 0.7%   |1/350 or 0.3%
-Depth of coverage               |80x             |30x
-Assembled genome size           |123,266 bp      |5.94 Mbp
-Number of contigs               |1 contig        |130 contigs
-Contig N50                      |123 kbp         |102 kbp
-Number of scaffolds             |1 scaffold      |36 scaffolds
-Scaffold N50                    |123 kbp         |369 kbp
-Largest scaffold                |123 kbp         |1222 kbp
-GC content                      |38.8%           |44.7%
-Number of genes without ORFs    |114 (108)       |143 (74)
-Protein coding genes (mRNA)     |74 (72)         |106 (51)
-Ribosomal RNA genes (rRNA)      |4 (4)           |8 (3)
-Transfer RNA genes (tRNA)       |36 (32)         |29 (20)
-Open reading frames (ORF) $\geq$ 300 bp |NA      |1065
-Coding genes containing introns |8               |5
-Introns in coding genes         |9               |7
-tRNA genes containing introns   |6               |0
+| Metric                          | Plastid         | Mitochondrion |
+|---------------------------------|-----------------|---------------|
+| Number of lanes                 | 1 MiSeq lane    | 1 HiSeq lane  |
+| Number of read pairs            | 4.9 million     | 133 million   |
+| Read length                     | 300 bp          | 150 bp        |
+| Number of merged reads          | 3.0 million     | 1.4 million   |
+| Median merged read length       | 492 bp          | 465 bp        |
+| Number of assembled reads       | 21 thousand     | 377 thousand  |
+| Proportion of organellar reads  | 1/140 or 0.7%   | 1/350 or 0.3% |
+| Depth of coverage               | 80x             | 30x           |
+| Assembled genome size           | 123,266 bp      | 5.94 Mbp      |
+| Number of contigs               | 1 contig        | 130 contigs   |
+| Contig N50                      | 123 kbp         | 102 kbp       |
+| Number of scaffolds             | 1 scaffold      | 36 scaffolds  |
+| Scaffold N50                    | 123 kbp         | 369 kbp       |
+| Largest scaffold                | 123 kbp         | 1222 kbp      |
+| GC content                      | 38.8%           | 44.7%         |
+| Number of genes without ORFs    | 114 (108)       | 143 (74)      |
+| Protein coding genes (mRNA)     | 74 (72)         | 106 (51)      |
+| Ribosomal RNA genes (rRNA)      | 4 (4)           | 8 (3)         |
+| Transfer RNA genes (tRNA)       | 36 (32)         | 29 (20)       |
+| Open reading frames (ORF) $\geq$ 300 bp | NA      | 1065          |
+| Coding genes containing introns | 8               | 5             |
+| Introns in coding genes         | 9               | 7             |
+| tRNA genes containing introns   | 6               | 0             |
 
 Table: Sequencing, assembly and annotation metrics of the white spruce organellar genomes. The number of distinct genes are shown in parentheses. {#tbl:metrics}
 
