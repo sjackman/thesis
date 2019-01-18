@@ -24,10 +24,10 @@ Table: The sequencing data of western redcedar is composed of three library type
 
 | Library type | Fragment | Lanes | Sequence  | Depth |
 |--------------|---------:|------:|----------:|------:|
-| Paired end   |   400 bp |     3 |   437 Gbp |  35.0 |
-|              |   400 bp |     3 |   412 Gbp |  33.0 | 
-|              |   400 bp |     2 |   257 Gbp |  20.6 |
-|              |   400 bp |     2 |   252 Gbp |  20.2 |
+| Paired end   |   431 bp |     3 |   437 Gbp |  35.0 |
+|              |   433 bp |     3 |   412 Gbp |  33.0 | 
+|              |   430 bp |     2 |   257 Gbp |  20.6 |
+|              |   419 bp |     2 |   252 Gbp |  20.2 |
 | **Total**    |          |    10 | 1,358 Gbp | 108.6 |
 | Mate pair    |  2.7 kbp |     2 |   239 Gbp |  19.1 |
 |              |  5.4 kbp |     2 |   283 Gbp |  22.6 |
@@ -35,11 +35,11 @@ Table: The sequencing data of western redcedar is composed of three library type
 |              | 10.9 kbp |     2 |   282 Gbp |  22.6 |
 |              | 15.5 kbp |     2 |   259 Gbp |  20.7 |
 | **Total**    |          |    10 | 1,346 Gbp | 107.7 |
-| Linked reads |   35 kbp |     2 |           |       |
-|              |   35 kbp |     2 |           |       |       
-|              |   20 kbp |     2 |           |       |
-|              |   22 kbp |     2 |           |       |
-| **Total**    |          |     8 |           |       |
+| Linked reads |   35 kbp |     2 |   236 Gbp |  18.9 |
+|              |   35 kbp |     2 |   241 Gbp |  19.3 |       
+|              |   20 kbp |     2 |   241 Gbp |  19.3 |
+|              |   22 kbp |     2 |   241 Gbp |  19.3 |
+| **Total**    |          |     8 |   959 Gbp |  76.7 |
 
 Illumina paired-end sequencing adapters were trimmed using Trimadap 0.1r11 (<https://github.com/lh3/trimadap>). Illumina mate-pair sequencing adapters were trimmed using NxTrim 0.4.3 [@O_Connell_2014]. 10x Genomics Chromium adapters were trimmed using Long Ranger Basic 2.1.6 (<https://github.com/10XGenomics/longranger>). Depth of *k*-mer coverage profiles were computed for multiple values of *k* using ntCard 1.0.1 [@Mohamadi_2017]. We analysed and visualized these *k*-mer coverage profiles using GenomeScope 1.0.0 [@Vurture_2017].
 
