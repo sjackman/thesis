@@ -19,6 +19,8 @@ header-includes: |
 
 \frontmatter
 
+\thispagestyle{empty}
+
 \begin{center}
 \Large
 
