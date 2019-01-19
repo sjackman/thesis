@@ -106,6 +106,22 @@ in Bioinformatics
 
 ## Preface
 
+All lab work, including sample preparation, library preparation, and sequencing, was conducted by collaborators.
+
+**Chapter 2**: ABySS 2.0. A version of this material has been published as Shaun D Jackman, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Sarah Yeo, S Austin Hammond, Golnaz Jahesh, Hamza Khan, Lauren Coombe, Rene L Warren, Inanc Birol (2017) ABySS 2.0: Resource-efficient assembly of large genomes using a Bloom filter. *Genome Research*, 27, 768–777 (<https://doi.org/10.1101/gr.214346.116>). Ben Vandervalk and I are joint first authors and contributed equally to the software development, and writing of the paper. I conducted the data analyses. Hamid Mohamadi developed ntHash, a software component used by ABySS 2.0. All authors provided feedback on the manuscript.
+
+**Chapter 3**: Tigmint. A version of this material has been published as Shaun D Jackman, Lauren Coombe, Justin Chu, Rene L Warren, Benjamin P Vandervalk, Sarah Yeo, Zhuyi Xue, Hamid Mohamadi, Joerg Bohlmann, Steven JM Jones, Inanc Birol (2018) Tigmint: Correcting assembly errors using linked reads from large molecules. *BMC Bioinformatics*, 19 (<https://doi.org/10.1186/s12859-018-2425-6>). Lauren Coombe, Justin Chu, and I contributed equally to the software development. I conducted the data analyses and wrote the paper. All authors provided feedback on the manuscript.
+
+**Chapter 4**: UniqTag. A version of this material has been published as Shaun D Jackman, Joerg Bohlmann, Inanc Birol (2014). UniqTag: Content-derived unique and stable identifiers for gene annotation. *PLOS ONE*, 10(5) (<https://doi.org/10.1371/journal.pone.0128026>). I developed the software, conducted the data analyses, and wrote the paper. All authors provided feedback on the manuscript.
+
+**Chapter 5**: ORCA. I lead the development of the software in collaboration with Tatyana Mozgacheva, Susie Chen, and Brendan O'Huiginn. Tatyana Mozgacheva and I contributed equally to writing the manuscript. All authors provided feedback on the manuscript, which has been submitted for publication.
+
+**Chapter 6**: White spruce organelles. A version of this material has been published as Shaun D Jackman, Rene Warren, Ewan Gibb, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Anthony Raymond, Stephen Pleasance, Robin Coope, Mark R Wildung, Carol E Ritland, Jean Bousquet, Steven JM Jones, Joerg C Bohlmann, Inanc Birol (2015). Organellar Genomes of White Spruce (Picea glauca): Assembly and Annotation. Genome Biology and Evolution, 8(1), 29–41 (<https://doi.org/10.1093/gbe/evv244>). I conducted the data analyses and wrote the paper. All authors provided feedback on the manuscript.
+
+**Chapter 7**: Sitka spruce mitochondrion. I conducted the data analyses and wrote the manuscript, which I intend to submit for publication.
+
+**Chapter 8**: Western redcedar. I conducted the data analyses and wrote this chapter.
+
 \newpage
 
 \tableofcontents
