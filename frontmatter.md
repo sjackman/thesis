@@ -138,6 +138,8 @@ All lab work, including sample preparation, library preparation, and sequencing,
 
 \newpage
 
+\markboth{}{}
+
 ## Abbreviations
 
 | **BED**: browser extensible data
