@@ -104,6 +104,8 @@ in Bioinformatics
 
 ## Lay Summary
 
+A DNA sequencing machine reads the ACGT nucleotides that compose the chromosomes of a genome, much as a digital camera converts a landscape to a sequence of ones and zeros. An ideal DNA sequencing machine would read an entire chromosome of DNA from beginning to end, with perfect fidelity. Practical DNA sequencing machines are able to read only snippets of DNA, and they make errors while reading the microscopic DNA, yielding imperfect sequence. I have developed software tools to reconstruct the true genome sequence from this imperfect DNA sequencing data. The program ABySS 2.0 reduces the memory (RAM) needed for genome assembly by ten fold. The program Tigmint corrects genome sequence assembly errors using a sequencing strategy called linked reads. I apply these tools to assembling the genome sequence of human and three conifers, white spruce, Sitka spruce, and western redcedar, whose genomes are many times larger than human.
+
 ## Preface
 
 All lab work, including sample preparation, library preparation, and sequencing, was conducted by collaborators.
