@@ -177,8 +177,6 @@ Most software used in these analyses was installed from the Homebrew-Science sof
 
 We provide the commands and configuration files used to run the various assemblers and scaffolding tools in Supplemental Listing S1--S16 and as Makefile scripts in Supplemental Archive 2. The scripts are also available online at <https://github.com/bcgsc/abyss-2.0-giab>. To calculate a suitable Bloom filter size for ABySS 2.0, we counted distinct *k*-mers in the reads with ntHash [@Mohamadi_2017] and targeted a Bloom filter false positive rate of 5%; we provide further details in "Assembler Scripts and Configuration Files" in the Supplemental Material. To assess the correctness of each assembly, we aligned the contigs to the primary chromosome sequences of human reference GRCh38 with BWA-MEM 0.7.13 and counted the number of resulting breakpoints with `abyss-samtobreak -G3088269832 -l500`.
 
-# Data Access
-
 The FASTA files for the assemblies of the HG004 Genome in a Bottle data may be downloaded from NCBI at <http://bit.ly/ncbi-giab-abyss2> and are also mirrored at <http://bit.ly/abyss2-ftp>.
 
 # Acknowledgements

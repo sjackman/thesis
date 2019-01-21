@@ -39,7 +39,7 @@ Assembling a single lane of white spruce whole genome sequencing data using the 
 
 Analysis of cpDNA is useful in reconstructing phylogenies of plants [@Wu_2007], in determining the origin of an expanding population [@Aizawa_2012] and in determining when distinct lineages of a species resulted from multiple colonization events [@Jard_n_Barbolla_2010]. These contrasting inheritance schemes of plastids and mitochondria can be useful in the characterization of species expanding their range. In the case of two previously allopatric species now found in sympatry, the mitochondrial DNA (mtDNA) is contributed by the resident species, whereas introgression of the plastid genome into the expanding species is limited, since pollen is more readily dispersed than seeds [@Du_2011]. Differential gene flow of cpDNA and mtDNA due to different methods of inheritance and dispersion results in new assemblages of organellar genomes and an increase of genetic diversity after expansion from a refugium [@Gerardi_2010].
 
-# Material and Methods
+# Methods
 
 ## DNA, RNA and software materials
 
@@ -167,7 +167,7 @@ Possible C-to-U RNA editing, positions where the genome sequence shows C but the
 
 ![A heatmap of the transcript abundance of mitochondrial protein coding genes, including open reading frames. Each column is a tissue sample. Each row is a gene. Each cell represents the transcript abundance of one gene in one sample. The colour scale is log~10~(1 + TPM), where TPM is transcripts per million as measured by Salmon.](whitespruce/mt-cds-orf-heatmap.png){#fig:mtheatmaporf}
 
-# Conclusion
+# Conclusions
 
 One lane of MiSeq sequencing of whole genome DNA is sufficient to assemble the 123 kbp plastid genome, and one lane of HiSeq sequencing of whole genome DNA is sufficient to assemble the 5.9 Mbp mitochondrial genome of white spruce. Additional Illumina and PacBio sequencing is used to improved scaffold contiguity and to close scaffold gaps, after which the plastid genome is assembled in a single contig and the largest mitochondrial scaffold is 1.2 Mbp.
 
