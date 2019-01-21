@@ -175,8 +175,4 @@ The white spruce plastid genome shows no structural rearrangements when compared
 
 The protein coding gene content of the mitochondrial genome is quite sparse, with 106 protein coding genes in 5.9 Mbp, in comparison to the plastid genome, with 74 protein coding genes in 123 kbp. Nearly 7% of the mitochondrial genome is composed of repeats, and roughly 1% is composed of coding genes. A significant portion, over 90%, of the unusually large size of the white spruce mitochondrial genome is yet unexplained.
 
-# Acknowledgements
-
-This work was supported by Genome Canada, Genome British Columbia and Genome Quebec as part of the SMarTForests Project (www.smartforests.ca). We thank Carson Holt for his help with the MAKER analysis and Martin Krzywinski for his help with @fig:mtgenes.
-
 # References

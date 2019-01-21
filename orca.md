@@ -42,8 +42,4 @@ Hackseq (<http://hackseq.com>) is a Vancouver-based hackathon focused on genomic
 
 ORCA provides a comprehensive bioinformatics container environment, which may be installed with a single Docker command, and includes hundreds of pre-compiled and configured bioinformatics tools. It may be used to painlessly install a multitude of bioinformatics tools on a fresh Linux server, provide a private container to each individual user, or shared containers to a collaborative group of users. It has been used successfully to provide compute resources to external collaborators at a core sequencing facility, to provide a ready-to-go bioinformatics environment for a collaborative hackathon, and to introduce bioinformatics to undergraduate biology students.
 
-# Acknowledgements
-
-We thank Danielle Lalonde (<http://danilalo.com>) for the Linuxbrew and Brewsci logos, Genome Canada and Genome BC for their financial support, the developers of the software packages included with ORCA, the developers of the Homebrew and Linuxbrew package managers, and those who contributed the scripts to package these tools.
-
 # References

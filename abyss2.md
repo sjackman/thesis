@@ -179,8 +179,4 @@ We provide the commands and configuration files used to run the various assemble
 
 The FASTA files for the assemblies of the HG004 Genome in a Bottle data may be downloaded from NCBI at <http://bit.ly/ncbi-giab-abyss2> and are also mirrored at <http://bit.ly/abyss2-ftp>.
 
-# Acknowledgements
-
-The research presented here was funded by the National Human Genome Research Institute of the National Institutes of Health (under award number R01HG007182), with additional support provided by Intel, Genome Canada, Genome British Columbia, and the British Columbia Cancer Foundation. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or other funding organizations.  We would also like to thank Martin Krzywinski for his help with the data visualization in the ideogram and Circos figures.
-
 # References

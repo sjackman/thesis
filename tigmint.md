@@ -198,21 +198,4 @@ NA12878 Oxford Nanopore reads assembled with Canu [@Jain_2018] \
 NA12878 10x Genomics Chromium linked reads \
 <https://support.10xgenomics.com/de-novo-assembly/datasets/2.0.0/wfu/>
 
-# Authors' contributions
-
-SDJ drafted the manuscript.
-SDJ and IB revised the manuscript.
-SDJ designed and executed the data analysis.
-SDJ, LC, and ZX performed exploratory data analysis.
-SDJ, LC, and JC implemented Tigmint.
-SDJ, LC, JC, RLW, and SY implemented ARCS.
-SDJ, BPV, and HM implemented ABySS 2.
-JC implemented JupiterPlot and created the JupiterPlot figure.
-JB, SJMJ, and IB supervised the project and secured funding.
-All authors provided critical feedback of the manuscript, and read and approved the final manuscript.
-
-# Funding
-
-This work was funded by Genome Canada, Genome BC, Natural Sciences and Engineering Research Council of Canada (NSERC), National Institutes of Health (NIH). The funding agencies were not involved in the design of the study and collection, analysis, interpretation of data, nor writing the manuscript.
-
 # References
