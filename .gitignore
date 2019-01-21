@@ -4,3 +4,4 @@
 *.html
 *.pdf
 thesis.md
+!abyss2-appendix/*.pdf
