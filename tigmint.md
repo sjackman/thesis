@@ -77,7 +77,7 @@ Tigmint will optionally compare the scaffolds to a reference genome, if one is p
 
 We have evaluated the effectiveness of Tigmint on assemblies of both short and long read sequencing data, including assemblies of Illumina paired-end and mate-pair sequencing using ABySS and DISCOVARdenovo, a Supernova assembly of linked reads, a Falcon assembly of PacBio sequencing, a Canu assembly of Oxford Nanopore sequencing, and an ABySS assembly of simulated Illumina sequencing (see @tbl:data). All assemblies are of the Genome in a Bottle (GIAB) human sample HG004, except the Canu assembly of human sample NA12878. The sample HG004 was selected for the variety of data types available, including Illumina 2x250 paired-end and mate-pair sequencing, linked reads, and PacBio sequencing [@Zook_2016]. NA12878 was selected for the availability of an assembly of Oxford Nanopore sequencing [@Jain_2018] as well as the linked read sequencing needed by Tigmint.
 
-Table: Genome assemblies of both short and long read sequencing were used to evaluate Tigmint. The GIAB sample HG004 is also known as NA24143. See "Availability of data and material" to access the sequencing data and assemblies. {#tbl:data}
+Table: Genome assemblies of both short and long read sequencing were used to evaluate Tigmint. The GIAB sample HG004 is also known as NA24143. See "Availability of data" to access the sequencing data and assemblies. {#tbl:data}
 
 | Sample  | Sequencing Platform | Assembler      |
 |---------|---------------------|----------------|
@@ -95,7 +95,29 @@ We repeated this analysis using Tigmint, ARCS, and QUAST with five other assembl
 
 We applied Tigmint and ARCS to two assemblies of single-molecule sequencing (SMS) reads. We downloaded PacBio reads assembled with Falcon from NCBI [@Chin_2016] and Oxford Nanopore reads assembled with Canu [@Jain_2018].
 
-Most software used in these analyses were installed using Linuxbrew [@Jackman_2016] with the command `brew tap brewsci/bio; brew install abyss arcs bwa lrsim miller minimap2 nxtrim samtools seqtk`. We used the development version of QUAST 5 revision 78806b2, which is capable of analyzing assemblies of large genomes using Minimap2 [@Li_2018].
+Most software used in these analyses were installed using Linuxbrew [@Jackman_2016] with the command `brew tap brewsci/bio; brew install abyss arcs bwa lrsim miller minimap2 nxtrim samtools seqtk`. We used the development version of QUAST 5 revision 78806b2, which is capable of analyzing assemblies of large genomes using Minimap2 [@Li_2018]. The script to run the data analysis is available online at <https://github.com/sjackman/tigmint-data>. Tigmint may be installed using PyPI, Bioconda [@Gr_ning_2018], Homebrew, or Linuxbrew [@Jackman_2016].
+
+## Availability of data
+
+The datasets generated and/or analysed during the current study are available from NCBI.
+
+HG004 Illumina mate-pair reads SRA SRR2832452-SRR283245 [@Zook_2016] <http://bit.ly/hg004-6kb> \
+or <small><ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG004_NA24143_mother/NIST_Stanford_Illumina_6kb_matepair/fastqs/></small>
+
+HG004 10x Genomics Chromium linked reads [@Zook_2016] <http://bit.ly/giab-hg004-chromium> \
+or <ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG004_NA24143_mother/10Xgenomics_ChromiumGenome/NA24143.fastqs/>
+
+HG004 ABySS 2.0 and Discovar de novo assemblies [@Jackman_2017] <http://bit.ly/giab-hg004> \
+or <https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/BCGSC_HG004_ABySS2.0_assemblies_12082016/>
+
+HG004 PacBio reads assembled with Falcon [@Zook_2016] <http://bit.ly/giab-falcon> \
+or <https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/MtSinai_PacBio_Assembly_falcon_03282016/>
+
+NA12878 Oxford Nanopore reads assembled with Canu [@Jain_2018] \
+<https://www.ncbi.nlm.nih.gov/assembly/GCA_900232925.1/>
+
+NA12878 10x Genomics Chromium linked reads \
+<https://support.10xgenomics.com/de-novo-assembly/datasets/2.0.0/wfu/>
 
 # Results
 
@@ -173,29 +195,5 @@ Tigmint uses linked reads to reduce the number of misassemblies in a genome sequ
 Linked read sequencing has two advantages over paired-end and mate-pair reads to identify and correct misassemblies. Firstly, the physical coverage of the large molecules of linked reads is more consistent and less prone to coverage dropouts than that of paired-end and mate-pair sequencing data. Since roughly a hundred read pairs are derived from each molecule, the mapping of the large molecule as a whole to the draft genome is less affected by the GC content and repetitiveness of any individual read. Secondly, paired-end and mate-pair reads are derived from molecules typically smaller than 1 kbp and 10 kbp respectively. Short reads align ambiguously to repetitive sequence that is larger than the DNA molecule size of the sequencing library. The linked reads of 10x Genomics Chromium are derived from molecules of about 100 kbp, which are better able to uniquely align to repetitive sequence and resolve misassemblies around repeats.
 
 Using single-molecule sequencing in combination with linked reads enables a genome sequence assembly that achieves both a high sequence contiguity as well as high scaffold contiguity, a feat not currently achievable with either technology alone. Although paired-end and mate-pair sequencing is often used to polish a long-read assembly to improve its accuracy at the nucleotide level, it is not well suited to polish the repetitive sequence of the assembly, where the reads align ambiguously. Linked reads would resolve this mapping ambiguity and are uniquely suited to polishing an assembly of long reads, an opportunity for further research in the hybrid assembly of long and linked reads.
-
-# Availability of data and material
-
-The script to run the data analysis is available online at <https://github.com/sjackman/tigmint-data>. Tigmint may be installed using PyPI, Bioconda [@Gr_ning_2018], Homebrew, or Linuxbrew [@Jackman_2016].
-
-The datasets generated and/or analysed during the current study are available from NCBI.
-
-HG004 Illumina mate-pair reads SRA SRR2832452-SRR283245 [@Zook_2016] <http://bit.ly/hg004-6kb> \
-or <small><ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG004_NA24143_mother/NIST_Stanford_Illumina_6kb_matepair/fastqs/></small>
-
-HG004 10x Genomics Chromium linked reads [@Zook_2016] <http://bit.ly/giab-hg004-chromium> \
-or <ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG004_NA24143_mother/10Xgenomics_ChromiumGenome/NA24143.fastqs/>
-
-HG004 ABySS 2.0 and Discovar de novo assemblies [@Jackman_2017] <http://bit.ly/giab-hg004> \
-or <https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/BCGSC_HG004_ABySS2.0_assemblies_12082016/>
-
-HG004 PacBio reads assembled with Falcon [@Zook_2016] <http://bit.ly/giab-falcon> \
-or <https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/MtSinai_PacBio_Assembly_falcon_03282016/>
-
-NA12878 Oxford Nanopore reads assembled with Canu [@Jain_2018] \
-<https://www.ncbi.nlm.nih.gov/assembly/GCA_900232925.1/>
-
-NA12878 10x Genomics Chromium linked reads \
-<https://support.10xgenomics.com/de-novo-assembly/datasets/2.0.0/wfu/>
 
 # References
