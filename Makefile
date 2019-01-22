@@ -5,20 +5,20 @@ pandoc_opt=-Fpandoc-crossref -Fpandoc-citeproc
 
 all: chapters thesis
 
-chapters: frontmatter.pdf introduction.pdf abyss2.pdf tigmint.pdf uniqtag.pdf orca.pdf whitespruce.pdf psitchensismt.pdf redcedar.pdf
+chapters: frontmatter.pdf introduction.pdf abyss2.pdf tigmint.pdf uniqtag.pdf orca.pdf whitespruce.pdf psitchensismt.pdf redcedar.pdf abyss2-appendix.pdf
 
 thesis: thesis.pdf
 
 # Aggregate the chapters into a single document.
-thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md orca.md whitespruce.md psitchensismt.md redcedar.md backmatter.md
+thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md orca.md whitespruce.md psitchensismt.md redcedar.md appendix.md abyss2-appendix.md backmatter.md
 	gsed -E \
 		-e '1,/^\\mainmatter/b' \
 		-e 's/^#/##/' \
 		-e 's/^title: "(.*)"/# \1/' \
 		-e 's/^chaptermark: "(.*)"/\\chaptermark{\1}/' \
-		-e '/^author:/,/^---/d' \
+		-e '/^author:/,/^---$$/d' \
 		-e '/^## References/d' \
-		-e '/^---/d' $^ >$@
+		-e '/^---$$/d' $^ >$@
 
 # Download the citation style language (CSL)
 thesis.csl:
