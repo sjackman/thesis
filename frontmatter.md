@@ -8,6 +8,7 @@ rangeDelim: "&ndash;"
 eqnPrefix: "Equation"
 figPrefix: "Fig."
 tblPrefix: ["Table", "Tables"]
+lstPrefix: ["Listing", "Listings"]
 codeBlockCaptions: True
 documentclass: book
 classoption: [oneside, openany]
