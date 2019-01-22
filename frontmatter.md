@@ -10,12 +10,14 @@ figPrefix: "Fig."
 tblPrefix: ["Table", "Tables"]
 lstPrefix: ["Listing", "Listings"]
 codeBlockCaptions: True
+cref: true
 documentclass: book
 classoption: [oneside, openany]
 fontsize: 12pt
 header-includes: |
     \usepackage[section]{tocbibind}
     \usepackage[onehalfspacing]{setspace}
+    \newcommand{\crefrangeconjunction}{--}
 ---
 
 \frontmatter

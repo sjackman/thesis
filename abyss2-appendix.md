@@ -8,6 +8,9 @@ rangeDelim: "&ndash;"
 figPrefix: "Fig."
 tblPrefix: ["Table", "Tables"]
 lstPrefix: ["Listing", "Listings"]
+cref: true
+header-includes:
+    - "\\newcommand{\\crefrangeconjunction}{--}"
 ---
 
 # Effect of Bloom Filter False Positive Rate
