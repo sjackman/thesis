@@ -153,15 +153,18 @@ All lab work, including sample preparation, library preparation, and sequencing,
 
 ## Abbreviations
 
+| **BAM**: Binary Alignment Map
 | **BED**: browser extensible data
 | **bp**: base pair
 | **Gbp**: gigbase pair
+| **GFA**: Graphical Fragment Assembly
 | **GIAB**: Genome in a Bottle
 | **kbp**: kilobase pair
 | **Mbp**: megabase pair
 | **NCBI**: National Center for Biotechnology Information
 | **RAM**: random access memory
 | **RSS**: resident set size
+| **SAM**: Sequence Alignment Map
 | **SMS**: single-molecule sequencing
 | **SRA**: Sequence Read Archive
 

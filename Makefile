@@ -5,12 +5,12 @@ pandoc_opt=-Fpandoc-crossref -Fpandoc-citeproc
 
 all: chapters thesis
 
-chapters: frontmatter.pdf introduction.pdf abyss2.pdf tigmint.pdf uniqtag.pdf orca.pdf whitespruce.pdf psitchensismt.pdf redcedar.pdf abyss2-appendix.pdf
+chapters: frontmatter.pdf introduction.pdf abyss2.pdf tigmint.pdf uniqtag.pdf orca.pdf whitespruce.pdf psitchensismt.pdf redcedar.pdf conclusions.pdf abyss2-appendix.pdf
 
 thesis: thesis.pdf
 
 # Aggregate the chapters into a single document.
-thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md orca.md whitespruce.md psitchensismt.md redcedar.md appendix.md abyss2-appendix.md backmatter.md
+thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md orca.md whitespruce.md psitchensismt.md redcedar.md conclusions.md appendix.md abyss2-appendix.md backmatter.md
 	gsed -E \
 		-e '1,/^\\mainmatter/b' \
 		-e 's/^#/##/' \
