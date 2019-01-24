@@ -98,7 +98,7 @@ in Bioinformatics
 | University Examiner
 \vspace{5mm}
 
-| TBD
+| Keith Adams, Botany
 | University Examiner
 
 \newpage
