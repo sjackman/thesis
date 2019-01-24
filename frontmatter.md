@@ -119,21 +119,35 @@ A DNA sequencing machine reads the ACGT nucleotides that compose the chromosomes
 
 ## Preface
 
-All lab work, including sample preparation, library preparation, and sequencing, was conducted by collaborators.
+All laboratory work, including sample preparation, library preparation, and sequencing, was conducted by collaborators.
 
-**Chapter 2**: ABySS 2.0. A version of this material has been published as Shaun D Jackman, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Sarah Yeo, S Austin Hammond, Golnaz Jahesh, Hamza Khan, Lauren Coombe, Rene L Warren, Inanc Birol (2017) ABySS 2.0: Resource-efficient assembly of large genomes using a Bloom filter. *Genome Research*, 27, 768–777 (<https://doi.org/10.1101/gr.214346.116>). Ben Vandervalk and I are joint first authors and contributed equally to the software development, and writing of the paper. I conducted the data analyses. Hamid Mohamadi developed ntHash, a software component used by ABySS 2.0. Martin Krzywinski provided feedback on the data visualization of the chromosome ideogram and Circos figures. All authors provided feedback on the manuscript.
+**Chapter 2**: ABySS 2.0.
+A version of this material has been published as Shaun D Jackman, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Sarah Yeo, S Austin Hammond, Golnaz Jahesh, Hamza Khan, Lauren Coombe, Rene L Warren, Inanc Birol (2017) ABySS 2.0: Resource-efficient assembly of large genomes using a Bloom filter. *Genome Research*, 27, 768–777 (<https://doi.org/10.1101/gr.214346.116>).
+SDJ and BPV are joint first authors. SDJ, BPV, and RLW drafted the manuscript. SDJ, BPV, RLW, SAH, and IB revised the manuscript. SDJ and BPV implemented ABySS 2.0. HM implemented ntHash. SDJ, LC, JC, RLW, and SY implemented ARCS. JC implemented JupiterPlot and created the JupiterPlot figures. IB supervised the project and secured funding. SDJ and BPV designed and executed the data analysis.
 
-**Chapter 3**: Tigmint. A version of this material has been published as Shaun D Jackman, Lauren Coombe, Justin Chu, Rene L Warren, Benjamin P Vandervalk, Sarah Yeo, Zhuyi Xue, Hamid Mohamadi, Joerg Bohlmann, Steven JM Jones, Inanc Birol (2018) Tigmint: Correcting assembly errors using linked reads from large molecules. *BMC Bioinformatics*, 19 (<https://doi.org/10.1186/s12859-018-2425-6>). SDJ drafted the manuscript. SDJ and IB revised the manuscript. SDJ designed and executed the data analysis. SDJ, LC, and ZX performed exploratory data analysis. SDJ, LC, and JC implemented Tigmint. SDJ, LC, JC, RLW, and SY implemented ARCS. SDJ, BPV, and HM implemented ABySS 2. JC implemented JupiterPlot and created the JupiterPlot figure. JB, SJMJ, and IB supervised the project and secured funding. All authors provided critical feedback of the manuscript.
+**Chapter 3**: Tigmint.
+A version of this material has been published as Shaun D Jackman, Lauren Coombe, Justin Chu, Rene L Warren, Benjamin P Vandervalk, Sarah Yeo, Zhuyi Xue, Hamid Mohamadi, Joerg Bohlmann, Steven JM Jones, Inanc Birol (2018) Tigmint: Correcting assembly errors using linked reads from large molecules. *BMC Bioinformatics*, 19 (<https://doi.org/10.1186/s12859-018-2425-6>).
+SDJ drafted the manuscript. SDJ and IB revised the manuscript. SDJ designed and executed the data analysis. SDJ, LC, and ZX performed exploratory data analysis. SDJ, LC, and JC implemented Tigmint. SDJ, LC, JC, RLW, and SY implemented ARCS. SDJ and BPV implemented ABySS 2.0. HM implemented ntHash. JC implemented JupiterPlot and created the JupiterPlot figure. JB, SJMJ, and IB supervised the project and secured funding.
 
-**Chapter 4**: UniqTag. A version of this material has been published as Shaun D Jackman, Joerg Bohlmann, Inanc Birol (2014). UniqTag: Content-derived unique and stable identifiers for gene annotation. *PLOS ONE*, 10(5) (<https://doi.org/10.1371/journal.pone.0128026>). I developed the software, conducted the data analyses, and wrote the paper. All authors provided feedback on the manuscript.
+**Chapter 4**: UniqTag.
+A version of this material has been published as Shaun D Jackman, Joerg Bohlmann, Inanc Birol (2014). UniqTag: Content-derived unique and stable identifiers for gene annotation. *PLOS ONE*, 10(5) (<https://doi.org/10.1371/journal.pone.0128026>).
+SDJ drafted the manuscript, developed the software, and designed and executed the data anlaysis. SDJ, JB, and IB revised the manuscript. JB and IB supervised the project and secured funding.
 
-**Chapter 5**: ORCA. I lead the development of the software in collaboration with Tatyana Mozgacheva, Susie Chen, and Brendan O'Huiginn. Tatyana Mozgacheva and I contributed equally to writing the manuscript. All authors provided feedback on the manuscript, which has been submitted for publication.
+**Chapter 5**: ORCA.
+A version of this material has been submitted for publication as Shaun D Jackman, Tatyana Mozgacheva, Susie Chen, Brendan O'Huiginn, Lance Bailey, Inanc Birol, Steven JM Jones. ORCA: A Comprehensive Bioinformatics Container Environment for Education and Research.
+SDJ and TM are joint first authors of the manuscript. SDJ lead the development of ORCA, Linuxbrew, and Brewsci/bio. SDJ, TM, SC, and BOH implemented ORCA. SDJ, TM, and SJMJ revised the manuscript. LB, IB, and SJMJ supervised the project. SJMJ secured funding.
 
-**Chapter 6**: White spruce organelles. A version of this material has been published as Shaun D Jackman, Rene Warren, Ewan Gibb, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Anthony Raymond, Stephen Pleasance, Robin Coope, Mark R Wildung, Carol E Ritland, Jean Bousquet, Steven JM Jones, Joerg C Bohlmann, Inanc Birol (2015). Organellar Genomes of White Spruce (Picea glauca): Assembly and Annotation. Genome Biology and Evolution, 8(1), 29–41 (<https://doi.org/10.1093/gbe/evv244>). I conducted the data analyses and wrote the paper. Martin Krzywinski and I developed the data visualization of the gene of the white spruce mitochondrion (@fig:mtgenes). All authors provided feedback on the manuscript.
+**Chapter 6**: White spruce organelles.
+A version of this material has been published as Shaun D Jackman, Rene Warren, Ewan Gibb, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Anthony Raymond, Stephen Pleasance, Robin Coope, Mark R Wildung, Carol E Ritland, Jean Bousquet, Steven JM Jones, Joerg C Bohlmann, Inanc Birol (2015). Organellar Genomes of White Spruce (Picea glauca): Assembly and Annotation. Genome Biology and Evolution, 8(1), 29–41 (<https://doi.org/10.1093/gbe/evv244>).
+SDJ and RW drafted the manuscript. SDJ, RW, and IB revised the manuscript. SDJ and RW assembled the plastid genome. SDJ annotated the plastid genome, assembled and annotated the mitochondrial genome, and designed and executed the data analysis. SDJ and Martin Krzywinski developed the data visualization of the genes of the white spruce mitochondrion. SJMJ, JCB, and IB supervised the project and secured funding.
 
-**Chapter 7**: Sitka spruce mitochondrion. I conducted the data analyses and wrote the manuscript, which I intend to submit for publication.
+**Chapter 7**: Sitka spruce mitochondrion.
+A version of this material is intended for publication as Shaun D. Jackman, Lauren Coombe, René L. Warren, Stephen Pleasance, Robin J. Coope, Jean Bousquet, Joerg C Bohlmann, Steven J. M. Jones, Inanc Birol. Largest Complete Mitochondrial Genome of a Gymnosperm, Sitka Spruce (*Picea sitchensis*), Assembled Using Long Reads.
+SDJ drafted the manuscript. SDJ, JCB, and IB revised the manuscript. SDJ assembled and annotated the mitochondrial genome. SDJ designed and executed the data analysis. JCB, SJMJ, and IB supervised the project and secured funding.
 
-**Chapter 8**: Western redcedar. I conducted the data analyses and wrote this chapter.
+**Chapter 8**: Western redcedar.
+This material is unpublished work.
+SDJ drafted this chapter, assembled the genome, and designed and executed the data analysis.
 
 \newpage
 
