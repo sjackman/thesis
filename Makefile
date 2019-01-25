@@ -7,7 +7,7 @@ all: chapters thesis
 
 chapters: frontmatter.pdf introduction.pdf abyss2.pdf tigmint.pdf uniqtag.pdf orca.pdf whitespruce.pdf psitchensismt.pdf redcedar.pdf conclusions.pdf abyss2-appendix.pdf
 
-thesis: thesis.pdf
+thesis: thesis.pdf thesis.docx
 
 # Aggregate the chapters into a single document.
 thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md orca.md whitespruce.md psitchensismt.md redcedar.md conclusions.md appendix.md abyss2-appendix.md backmatter.md
