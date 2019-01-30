@@ -182,6 +182,12 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 | **SMS**: single-molecule sequencing
 | **SRA**: Sequence Read Archive
 
+## Glossary
+
+| **N50**: Half of the genome assembly is in sequences that are the N50 size or larger. The N50 is the weighted median of the sequence lengths, where the weight is the length of each sequence.
+| **NG50**: Half of the genome, with estimated size *G*, is assembled in sequences that are the NG50 size or larger. The NG50 is equivalent to the N50 when the estimated genome size *G* is set to the size of the assembled sequence. The NG50 penalizes assemblies that assemble less than the estimated genome size *G*.
+| *NGA50*: After aligning the assembled sequences to the reference genome, half of the genome, with estimated size *G*, is in alignments blocks that are the NGA50 size or larger. The NGA50 penalizes assemblies that are structurally different than the reference genome.
+
 ## Acknowledgements
 
 I thank my supervisor Inanc Birol his guidance and support through my PhD, which I have thoroughly enjoyed thanks to his kind and encouraging nature. I thank my co-supervisor Joerg Bohlmann for providing a biological context for my computational work. I thank my supervisory committee members, Steven Hallam and Seven Jones, for their feedback on this thesis. I acknowledge the contributions of my colleagues with whom I have collaborated to write the papers found in this thesis. I am thankful to have spent time with my fellow students and friends in the Birol lab. I am grateful to my collaborators and colleagues in the wet lab, without whom I would have no sequencing data to analyze. Finally, I am grateful for the financial support of the Natural Sciences and Engineering Research Council of Canada (NSERC), who funded my studies, and the agencies that funded the individual research projects, described below.
