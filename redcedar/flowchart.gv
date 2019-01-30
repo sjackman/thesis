@@ -1,0 +1,25 @@
+digraph {
+node [shape="rectangle" width=5]
+
+pe [label="Illumina paired-end reads" shape="parallelogram"]
+mp [label="Illumina mate-pair reads" shape="parallelogram"]
+lr [label="10x Genomics Chromium linked reads" shape="parallelogram"]
+
+pe_trim [label="Trimadap\nTrim sequencing adapters"]
+mp_trim [label="NxTrim\nTrim sequencing adapters"]
+lr_trim [label="Long Ranger Basic\nTrim barcodes of linked reads"]
+
+abyss [label="ABySS 2.0\nAssemble paired-end reads"]
+abyss_mp [label="ABySS-Scaffold\nScaffold using mate-pair reads"]
+tigmint [label="Tigmint\nCut scaffolds at assembly errors using linked reads"]
+arcs [label="ARCS\nIdentify pairs of adjacent sequences using linked reads"]
+abyss_lr [label="ABySS-Scaffold\nScaffold using linked reads"]
+scaffolds [label="Draft genome assembly" shape="ellipse"]
+busco [label="BUSCO\nEstimate assembly completeness using core single-copy genes"]
+
+pe -> pe_trim -> abyss
+mp -> mp_trim -> abyss_mp
+lr -> lr_trim -> tigmint
+lr_trim -> arcs
+abyss -> abyss_mp -> tigmint -> arcs -> abyss_lr -> scaffolds -> busco
+}
