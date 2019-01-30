@@ -143,7 +143,7 @@ SDJ and RW drafted the manuscript. SDJ, RW, and IB revised the manuscript. SDJ a
 
 **Chapter 7**: Sitka spruce mitochondrion.
 A version of this material is intended for publication as Shaun D Jackman, Lauren Coombe, René L Warren, Heather Kirk, Eva Trinh, Stephen Pleasance, Pawan Pandoh, Yongjun Zhao, Robin J Coope, Jean Bousquet, Joerg C Bohlmann, Steven JM Jones, Inanc Birol. Largest Complete Mitochondrial Genome of a Gymnosperm, Sitka Spruce (*Picea sitchensis*), Assembled Using Long Reads.
-SDJ drafted the manuscript. SDJ, LC, RLW, JCB, and IB revised the manuscript. HK and ET constructed the libraries and sequenced the DNA. SP, PP, and YZ supervised the sequencing. SDJ assembled and annotated the mitochondrial genome. SDJ designed and executed the data analysis. JCB, SJMJ, and IB supervised the project and secured funding.
+SDJ drafted the manuscript. SDJ, LC, RLW, SP, JCB, and IB revised the manuscript. HK and ET constructed the libraries and sequenced the DNA. SP, PP, and YZ supervised the sequencing. SDJ assembled and annotated the mitochondrial genome. SDJ designed and executed the data analysis. JCB, SJMJ, and IB supervised the project and secured funding.
 
 **Chapter 8**: Western redcedar.
 This material is unpublished work.
