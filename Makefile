@@ -22,7 +22,7 @@ thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md orca.m
 
 # Download the citation style language (CSL)
 thesis.csl:
-	curl -o $@ https://www.zotero.org/styles/bioinformatics
+	curl -o $@ https://www.zotero.org/styles/genome-research
 
 # Render Markdown to HTML using Pandoc
 %.html: %.md
