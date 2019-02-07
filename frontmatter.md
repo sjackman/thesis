@@ -176,6 +176,7 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 | **kbp**: kilobase pair
 | **Mbp**: megabase pair
 | **NCBI**: National Center for Biotechnology Information
+| **ORF**: open reading frame
 | **RAM**: random access memory
 | **RSS**: resident set size
 | **SAM**: Sequence Alignment Map
