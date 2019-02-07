@@ -1,5 +1,7 @@
 # PhD thesis of Shaun Jackman
 
+# Efficient Assembly of Large Genomes
+
 DNA sequencing machines read the A, C, G, and T nucleotides that compose chromosomes, but they read only short snippets of DNA and make errors. Dr. Jackman developed tools to reconstruct the true genome sequence from imperfect DNA sequencing reads. He used these tools to assemble the western redcedar genome, which is four times larger than human.
 
 # Contents
