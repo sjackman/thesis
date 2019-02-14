@@ -1,7 +1,7 @@
 ---
 title: "Organellar Genomes of White Spruce (*Picea glauca*): Assembly and Annotation"
 chaptermark: "Organellar Genomes of White Spruce"
-author: [Shaun D Jackman, Rene Warren, Ewan Gibb, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Anthony Raymond, Stephen Pleasance, Robin Coope, Mark R Wildung, Carol E Ritland, Jean Bousquet, Steven JM Jones, Joerg C Bohlmann, Inanc Birol]
+author: [Shaun D Jackman, Rene Warren, Ewan Gibb, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Anthony Raymond, Stephen Pleasance, Robin Coope, Mark R Wildung, Carol E Ritland, Jean Bousquet, Steven JM Jones, Joerg Bohlmann, Inanc Birol]
 keywords: organelle, plastid, mitochondrion, genome, sequencing, assembly, annotation, white spruce, Picea glauca
 bibliography: thesis.bib
 csl: thesis.csl
