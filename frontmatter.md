@@ -94,7 +94,7 @@ in Bioinformatics
 | Supervisory Committee Member
 \vspace{5mm}
 
-| TBD
+| Paul Pavlidis, Michael Smith Laboratories
 | University Examiner
 \vspace{5mm}
 
