@@ -19,13 +19,13 @@ To assess the effects of the Bloom filter false positive rate (FPR) on ABySS 2.0
 
 We used QUAST 3.2 to calculate the NG50 and misassembly metrics for the experiment, using the *C. elegans* Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158).  Expanding on the results presented in Fig. 2.3, [@fig:fpr1;@fig:fpr2;@fig:fpr3] depict the changes to FPR, wallclock time, and a variety of QUAST contiguity and misassembly metrics that result from changing the Bloom filter allocation, while [@tbl:fpr1;@tbl:fpr2;@tbl:fpr3] provide the corresponding data. We observe that as the Bloom filter memory decreases from 3000 MB to 500 MB (FPR values of 1.91% and 10.9%, respectively), the majority of assembly metrics remain stable. However, large changes in the metrics occur when the Bloom filter allocation is decreased further from 500 MB to 250 MB (FPR values of 10.9% and 20.7%, respectively).  We similarly observe a steep increase in wallclock time from 57 min to 152 min when further decreasing Bloom filter allocation from 500 MB to 250 MB. These results indicate that a target FPR between 5% - 10% provides the best trade-off between assembly quality, wallclock time, and memory usage.
 
-![N50, number of misassemblies, NG50, number of relocation misassemblies, NGA50, and number of misassembled contigs reported by QUAST 3.2 for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using the C. elegans Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). Results are shown for Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB. Number of translocation misassemblies and inversion misassemblies are omitted because their count was zero across all Bloom filter sizes.](abyss2-appendix/quast-a.pdf){#fig:fpr1}
+![N50, number of misassemblies, NG50, number of relocation misassemblies, NGA50, and number of misassembled contigs reported by QUAST 3.2 for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using the *C. elegans* Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). Results are shown for Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB. Number of translocation misassemblies and inversion misassemblies are omitted because their count was zero across all Bloom filter sizes.](abyss2-appendix/quast-a.pdf){#fig:fpr1}
 
-![Sum length of misassembled contigs, number of indels, number of local misassemblies, number of short indels, number of mismatches, and number of long indels reported by QUAST 3.2 for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using the C. elegans Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). Results are shown for Bloom filter allocations ranging between 250 MB and 3000 MB with a step size 250 MB.](abyss2-appendix/quast-b.pdf){#fig:fpr2}
+![Sum length of misassembled contigs, number of indels, number of local misassemblies, number of short indels, number of mismatches, and number of long indels reported by QUAST 3.2 for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using the *C. elegans* Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). Results are shown for Bloom filter allocations ranging between 250 MB and 3000 MB with a step size 250 MB.](abyss2-appendix/quast-b.pdf){#fig:fpr2}
 
-![Sum length of indels, Bloom filter false positive rate, reconstruction, and wallclock time for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB.  Sum length of indels and reconstruction were computed by QUAST 3.2 using the C. elegans Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). The reconstruction figure corresponds to the "Total_length" column reported by QUAST, which the sum length of all assembled sequences >= 500 bp. The dashed line of the reconstruction plot indicates the length of the reference genome sequence.](abyss2-appendix/quast-c.pdf){#fig:fpr3}
+![Sum length of indels, Bloom filter false positive rate, reconstruction, and wallclock time for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB.  Sum length of indels and reconstruction were computed by QUAST 3.2 using the *C. elegans* Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). The reconstruction figure corresponds to the "Total_length" column reported by QUAST, which the sum length of all assembled sequences >= 500 bp. The dashed line of the reconstruction plot indicates the length of the reference genome sequence.](abyss2-appendix/quast-c.pdf){#fig:fpr3}
 
-Table: Bloom filter memory, N50, NG50, NGA50, number of misassemblies, number of relocation misassemblies, and number of misassembled contigs reported by QUAST 3.2 for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using the C. elegans Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). Results are shown for Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB. Number of translocation misassemblies and inversion misassemblies are omitted because their count was zero across all Bloom filter sizes. {#tbl:fpr1}
+Table: Bloom filter memory, N50, NG50, NGA50, number of misassemblies, number of relocation misassemblies, and number of misassembled contigs reported by QUAST 3.2 for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using the *C. elegans* Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). Results are shown for Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB. Number of translocation misassemblies and inversion misassemblies are omitted because their count was zero across all Bloom filter sizes. {#tbl:fpr1}
 
 Bloom Filter Mem (MB)  |N50    |NG50  |NGA50  |Misassemblies  |Relocations  |Misassembled Contigs
 --------------          |-------|------|-------|---------------|-------------|-----------
@@ -42,7 +42,7 @@ Bloom Filter Mem (MB)  |N50    |NG50  |NGA50  |Misassemblies  |Relocations  |Mis
 2750                    |10970  |9591  |9586   |9              |9            |9
 3000                    |10970  |9597  |9594   |9              |9            |9
 
-Table: Bloom filter memory, sum length of misassembled contigs, number of local misassemblies, number of mismatches, number of indels, number of short indels, and number of long indels reported by QUAST 3.2 for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using the C. elegans Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). Results are shown for Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB. {#tbl:fpr2}
+Table: Bloom filter memory, sum length of misassembled contigs, number of local misassemblies, number of mismatches, number of indels, number of short indels, and number of long indels reported by QUAST 3.2 for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using the *C. elegans* Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). Results are shown for Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB. {#tbl:fpr2}
 
 Bloom Filter Mem (MB)  |Misassembled Contigs Length  |Local Misassemblies  |Mismatches  |Indels  |Short Indels  |Long Indels
 --------------          |-----------------            |-----------------    |------------|--------|--------      |-----------
@@ -59,7 +59,7 @@ Bloom Filter Mem (MB)  |Misassembled Contigs Length  |Local Misassemblies  |Mism
 2750                    |87437                        |31                   |1014        |950     |902           |48
 3000                    |87436                        |31                   |1014        |956     |908           |48
 
-Table: Bloom filter memory, sum length of indels, reconstruction, Bloom filter false positive rate, and wallclock time for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB.  Sum length of indels and reconstruction were computed by QUAST 3.2 using the C. elegans Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). The reconstruction figure corresponds to the "Total_length" column reported by QUAST, which the sum length of all assembled sequences >= 500 bp. The dashed line of the reconstruction plot indicates the length of the reference genome sequence. {#tbl:fpr3}
+Table: Bloom filter memory, sum length of indels, reconstruction, Bloom filter false positive rate, and wallclock time for ABySS 2.0 assemblies of *C. elegans* dataset DRR008444, using Bloom filter memory allocations ranging between 250 MB and 3000 MB with a step size 250 MB.  Sum length of indels and reconstruction were computed by QUAST 3.2 using the *C. elegans* Bristol N2 strain as the reference genome (NCBI BioProject PRJNA158). The reconstruction figure corresponds to the "Total_length" column reported by QUAST, which the sum length of all assembled sequences >= 500 bp. The dashed line of the reconstruction plot indicates the length of the reference genome sequence. {#tbl:fpr3}
 
 Bloom Filter Mem (MB)  |Indels Length  |Reconstruction  |False Positive Rate  |Wallclock (min)
 --------------          |--------       |----------------|---------------------|----------------
@@ -307,8 +307,7 @@ PrepareAllPathsInputs.pl DATA_DIR=$PWD PLOIDY=2 HOSTS=32
 RunAllPathsLG PRE=. REFERENCE_NAME=. DATA_SUBDIR=. RUN=allpaths SUBDIR=run
 ```
 
-Listing: ALLPATHS-LG `in_libs.csv` \
-<https://github.com/bcgsc/abyss-2.0-giab/blob/1.0/allpaths-lg/in_libs.csv>
+Listing: ALLPATHS-LG `in_libs.csv`. <https://github.com/bcgsc/abyss-2.0-giab/blob/1.0/allpaths-lg/in_libs.csv>
 
 ```{#lst:allpathslg2 .csv}
 library_name,project_name,organism_name,type,paired,frag_size,frag_stddev,
@@ -317,8 +316,7 @@ pe400,giab,hsapiens,fragment,1,400,90,0,0,inward,0,0
 mp6k,giab,hsapiens,jumping,1,0,0,6000,1400,outward,0,0
 ```
 
-Listing: ALLPATHS-LG `in_groups.csv` \
-<https://github.com/bcgsc/abyss-2.0-giab/blob/1.0/allpaths-lg/in_groups.csv>
+Listing: ALLPATHS-LG `in_groups.csv`. <https://github.com/bcgsc/abyss-2.0-giab/blob/1.0/allpaths-lg/in_groups.csv>
 
 ```{#lst:allpathslg3 .csv}
 max_rd_len=250
@@ -377,8 +375,7 @@ Listing: MaSuRCA. The script `assemble.sh` is generated by `masurca` itself.
 ./assemble.sh
 ```
 
-Listing: MaSuRCA `config.txt` \
-<https://github.com/bcgsc/abyss-2.0-giab/blob/1.0/masurca/config.txt>
+Listing: MaSuRCA `config.txt`. <https://github.com/bcgsc/abyss-2.0-giab/blob/1.0/masurca/config.txt>
 
 ```{#lst:masurca2}
 DATA
@@ -440,8 +437,7 @@ Listing: SOAPdenovo2
 SOAPdenovo-127mer all -K 95 -R -p 64 -s hsapiens.config
 ```
 
-Listing: SOAPdenovo2 `hsapiens.config` \
-<https://github.com/bcgsc/abyss-2.0-giab/blob/1.0/soapdenovo/hsapiens.config>
+Listing: SOAPdenovo2 `hsapiens.config`. <https://github.com/bcgsc/abyss-2.0-giab/blob/1.0/soapdenovo/hsapiens.config>
 
 ```{#lst:soapdenovo2}
 max_rd_len=250
