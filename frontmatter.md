@@ -167,11 +167,11 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 
 ## Abbreviations
 
-| **BAM**: Binary Alignment Map
+| **BAM**: binary alignment map
 | **BED**: browser extensible data
 | **bp**: base pair
 | **Gbp**: gigbase pair
-| **GFA**: Graphical Fragment Assembly
+| **GFA**: graphical fragment assembly
 | **GIAB**: Genome in a Bottle
 | **kbp**: kilobase pair
 | **Mbp**: megabase pair
@@ -179,15 +179,15 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 | **ORF**: open reading frame
 | **RAM**: random access memory
 | **RSS**: resident set size
-| **SAM**: Sequence Alignment Map
+| **SAM**: sequence alignment map
 | **SMS**: single-molecule sequencing
 | **SRA**: Sequence Read Archive
 
 ## Glossary
 
-| **N50**: Half of the genome assembly is in sequences that are the N50 size or larger. The N50 is the weighted median of the sequence lengths, where the weight is the length of each sequence.
-| **NG50**: Half of the genome, with estimated size *G*, is assembled in sequences that are the NG50 size or larger. The NG50 is equivalent to the N50 when the estimated genome size *G* is set to the size of the assembled sequence. The NG50 penalizes assemblies that assemble less than the estimated genome size *G*.
-| *NGA50*: After aligning the assembled sequences to the reference genome, half of the genome, with estimated size *G*, is in alignments blocks that are the NGA50 size or larger. The NGA50 penalizes assemblies that are structurally different than the reference genome.
+| **N50**: Half of the genome assembly is in sequences at least as large as the N50. The N50 is the weighted median of the sequence lengths, where the weight is the length of each sequence.
+| **NG50**: Half of the estimated genome size *G* is assembled in sequences at least as large as the NG50. The NG50 is equivalent to the N50 if *G* is the size of the assembled sequence. The NG50 penalizes assemblies that are smaller than the estimated genome size.
+| **NGA50**: After aligning the assembly to a reference, half of the estimated genome size *G* is in alignments blocks at least as large as the NGA50. The NGA50 penalizes assemblies that are structurally different than the reference.
 
 ## Acknowledgements
 
