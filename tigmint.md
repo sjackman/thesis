@@ -10,7 +10,7 @@ figPrefix: "Fig."
 lstPrefix: "Listing"
 tblPrefix: ["Table", "Tables"]
 codeBlockCaptions: True
-fontsize: 11pt
+fontsize: 12pt
 geometry: margin=1in
 permalink: /
 ---
@@ -137,42 +137,38 @@ The assemblies of SMS reads have contig NGA50s in the megabases. Tigmint and ARC
 
 ![Assemblies of Oxford Nanopore sequencing of NA12878 with Canu and PacBio sequencing of HG004 with Falcon with and without correction using Tigmint prior to scaffolding with ARCS.](tigmint/metrics-sms.png){#fig:metrics-sms}
 
-\newpage
+Table: The assembly contiguity (scaffold NG50 and NGA50 in Mbp) and correctness (number of misassemblies) metrics with and without correction using Tigmint prior to scaffolding with ARCS. ABySS and DISCOVARdenovo are assemblies of Illumina sequencing. Supernova is an assembly of linked read sequencing. Falcon is an assembly of PacBio sequencing. Canu is an assembly Oxford Nanopore sequencing. Data simulated with LRSim is assembled with ABySS. {#tbl:tigmint-metrics}
 
-Table: The assembly contiguity (scaffold NG50 and NGA50) and correctness (number of misassemblies) metrics with and without correction using Tigmint prior to scaffolding with ARCS. ABySS and DISCOVARdenovo are assemblies of Illumina sequencing. Supernova is an assembly of linked read sequencing. Falcon is an assembly of PacBio sequencing. Canu is an assembly Oxford Nanopore sequencing. Data simulated with LRSim is assembled with ABySS. {#tbl:tigmint-metrics}
-
-| Sample    | Assembly                 | NG50 (Mbp) | NGA50 (Mbp) | Misass. |   Reduction |
+| Sample    | Assembly                 | NG50       | NGA50       | Misass. |   Reduction |
 | --------- | ------------------------ | ---------: | ----------: | ------: | ----------: |
-| HG004     | ABySS                    |       3.65 |        3.09 |     790 |          NA |
+| HG004     | ABySS                    |       3.65 |        3.09 |     790 |             |
 |           | ABySS+Tigmint            |       3.47 |        3.09 |     574 | 216 (27.3%) |
-|           | ABySS+ARCS               |       9.91 |        7.86 |     823 |          NA |
+|           | ABySS+ARCS               |       9.91 |        7.86 |     823 |             |
 |           | ABySS+Tigmint+ARCS       |      26.39 |       16.43 |     641 | 182 (22.1%) |
-| HG004     | DISCO+ABySS              |      10.55 |        9.04 |     701 |          NA |
+| HG004     | DISCO+ABySS              |      10.55 |        9.04 |     701 |             |
 |           | DISCO+ABySS+Tigmint      |      10.16 |        9.04 |     666 |   35 (5.0%) |
-|           | DISCO+ABySS+ARCS         |      29.20 |       17.05 |     829 |          NA |
+|           | DISCO+ABySS+ARCS         |      29.20 |       17.05 |     829 |             |
 |           | DISCO+ABySS+Tigmint+ARCS |      35.31 |       23.68 |     804 |   25 (3.0%) |
-| HG004     | DISCO+BESST              |       7.01 |        6.14 |     568 |          NA |
+| HG004     | DISCO+BESST              |       7.01 |        6.14 |     568 |             |
 |           | DISCO+BESST+Tigmint      |       6.77 |        6.14 |     493 |  75 (13.2%) |
-|           | DISCO+BESST+ARCS         |      27.64 |       15.14 |     672 |          NA |
+|           | DISCO+BESST+ARCS         |      27.64 |       15.14 |     672 |             |
 |           | DISCO+BESST+Tigmint+ARCS |      33.43 |       19.40 |     603 |  69 (10.3%) |
-| HG004     | Supernova                |      38.48 |       12.65 |   1,005 |          NA |
+| HG004     | Supernova                |      38.48 |       12.65 |   1,005 |             |
 |           | Supernova+Tigmint        |      17.72 |       11.43 |     923 |   82 (8.2%) |
-|           | Supernova+ARCS           |      39.63 |       13.24 |   1,052 |          NA |
+|           | Supernova+ARCS           |      39.63 |       13.24 |   1,052 |             |
 |           | Supernova+Tigmint+ARCS   |      27.35 |       12.60 |     998 |   54 (5.1%) |
-| HG004     | Falcon                   |       4.56 |        4.21 |   3,640 |          NA |
+| HG004     | Falcon                   |       4.56 |        4.21 |   3,640 |             |
 |           | Falcon+Tigmint           |       4.45 |        4.21 |   3,444 |  196 (5.4%) |
-|           | Falcon+ARCS              |      18.14 |        9.71 |   3,801 |          NA |
+|           | Falcon+ARCS              |      18.14 |        9.71 |   3,801 |             |
 |           | Falcon+Tigmint+ARCS      |      22.52 |       11.97 |   3,574 |  227 (6.0%) |
-| NA12878   | Canu                     |       7.06 |        5.40 |   1,688 |          NA |
+| NA12878   | Canu                     |       7.06 |        5.40 |   1,688 |             |
 |           | Canu+Tigmint             |       6.87 |        5.38 |   1,600 |   88 (5.2%) |
-|           | Canu+ARCS                |      19.70 |       10.12 |   1,736 |          NA |
+|           | Canu+ARCS                |      19.70 |       10.12 |   1,736 |             |
 |           | Canu+Tigmint+ARCS        |      22.01 |       10.85 |   1,626 |  110 (6.3%) |
-| Simulated | ABySS                    |       9.00 |        8.28 |     272 |          NA |
-|           | ABySS+Tigmint            |       8.61 |        8.28 |     217 |  55 (20.2%) |
-|           | ABySS+ARCS               |      23.37 |       17.09 |     365 |          NA |
+| Simulated | ABySS                    |       9.00 |        8.28 |     272 |             |
+| (LRSim)   | ABySS+Tigmint            |       8.61 |        8.28 |     217 |  55 (20.2%) |
+|           | ABySS+ARCS               |      23.37 |       17.09 |     365 |             |
 |           | ABySS+Tigmint+ARCS       |      30.24 |       24.98 |     320 |  45 (12.3%) |
-
-\newpage
 
 The alignments of the ABySS assembly to the reference genome before and after Tigmint are visualized in @fig:tigmint-jupiter using JupiterPlot [@URL_JupiterPlot], which uses Circos [@Krzywinski_2009]. A number of split alignments, likely misassemblies, are visible in the assembly before Tigmint, whereas after Tigmint no such split alignments are visible.
 
