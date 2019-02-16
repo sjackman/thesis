@@ -17,6 +17,7 @@ fontsize: 12pt
 header-includes: |
     \usepackage[section]{tocbibind}
     \usepackage[onehalfspacing]{setspace}
+    \usepackage[all]{nowidow}
     \newcommand{\crefrangeconjunction}{--}
 ---
 
