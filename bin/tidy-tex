@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+"""
+Tidy up Pandoc LaTeX.
+Summarize captions of figures, listings, and tables.
+"""
+
+import re
+import sys
+
+RX_FIG_CAPTION = re.compile(r"^\\caption{(.+)}\\label{(.+)}$")
+RX_LST_CAPTION = re.compile(r"^\\caption{(.+)}$")
+RX_TBL_CAPTION = re.compile(r"^\\caption{\\label{([^}]+)}(.+)}\\tabularnewline$")
+
+def summarize_caption(caption):
+    "Return the first sentence of a caption."
+    pos = caption.find(". ")
+    if pos == -1:
+        return caption
+    while True:
+        summary = caption[0 : pos + 1]
+        if summary.endswith("et al.") or summary.count("{") != summary.count("}"):
+            pos = caption.find(". ", pos + 1)
+            if pos == -1:
+                return caption
+        else:
+            return summary
+
+def main():
+    "Tidy up Pandoc LaTeX."
+    for line in sys.stdin:
+        line = line.rstrip()
+        if line.startswith(r"\caption{"):
+            fig_match = RX_FIG_CAPTION.match(line)
+            lst_match = RX_LST_CAPTION.match(line)
+            tbl_match = RX_TBL_CAPTION.match(line)
+            if fig_match:
+                caption, label = fig_match.groups()
+                summary = summarize_caption(caption)
+                print(r"\caption[", summary, "]{", caption, r"}\label{", label, "}", sep="")
+            elif lst_match:
+                caption = lst_match.group(1)
+                summary = summarize_caption(caption)
+                print(r"\caption[", summary, "]{", caption, "}", sep="")
+            elif tbl_match:
+                label, caption = tbl_match.groups()
+                summary = summarize_caption(caption)
+                print(
+                    r"\caption[", summary, "]{\\label{", label, "}", caption, r"}\tabularnewline",
+                    sep="")
+            else:
+                print("Error: caption regex does not match:", line, file=sys.stderr)
+                sys.exit(1)
+        else:
+            print(line)
+
+if __name__ == "__main__":
+    main()
