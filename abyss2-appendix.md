@@ -245,7 +245,7 @@ SOAPdenovo2        |BFC    |659          |35       |
 
 ![A Circos Assembly Consistency Plot for the DISCOVAR *de novo* + LINKS + BioNano Assembly. Scaftigs from the largest scaffolds that compose 90% of the genome are aligned to GRCh38 using BWA-MEM. GRCh38 chromosomes are displayed on the left and the scaffolds on the right. Connections show the aligned regions between the genome and scaffolds. Contigs are included as a part of the same region if the are within 1Mbp of on either side of the connection, and regions shorter than 100 kbp are not shown. The black regions on the chromosomes indicate gaps in the reference and the circles indicate the centromere location on each chromosome.](abyss2-appendix/discovardenovo_links_bionano.png){#fig:jup6}
 
-\newpage
+\clearpage
 
 ## Software
 
@@ -489,9 +489,7 @@ python makeTSVfile.py hsapiens-scaffolds.fa.scaff_s98_c5_original.gv \
 LINKS -f hsapiens-scaffolds.fa -s empty.fof -b human_c5 -l 5 -a 0.3
 ```
 
-\newpage
-
-# Shortened URLs
+\clearpage
 
 Table: Shortened URLs {#tbl:urls}
 
