@@ -7,7 +7,7 @@ all: chapters thesis
 
 chapters: frontmatter.pdf introduction.pdf abyss2.pdf tigmint.pdf uniqtag.pdf orca.pdf whitespruce.pdf psitchensismt.pdf redcedar.pdf conclusions.pdf abyss2-appendix.pdf
 
-thesis: thesis.pdf thesis.docx
+thesis: thesis.tidy.pdf thesis.docx
 
 # Aggregate the chapters into a single document.
 thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md orca.md whitespruce.md psitchensismt.md redcedar.md conclusions.md appendix.md abyss2-appendix.md backmatter.md
@@ -23,6 +23,18 @@ thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md orca.m
 # Download the citation style language (CSL)
 thesis.csl:
 	curl -o $@ https://www.zotero.org/styles/genome-research
+
+# Convert Markdown to LaTeX using Pandoc
+%.orig.tex: %.md thesis.bib thesis.csl
+	pandoc $(pandoc_opt) --wrap=none -s -o $@ $<
+
+# Tidy up the Pandoc-generated LaTeX.
+%.tidy.tex: %.orig.tex
+	bin/tidy-tex <$< >$@
+
+# Render LaTeX to PDF using XeLaTeX.
+%.pdf: %.tex
+	xelatex $<
 
 # Render Markdown to HTML using Pandoc
 %.html: %.md
