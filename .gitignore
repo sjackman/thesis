@@ -3,5 +3,15 @@
 *.doi.bib
 *.html
 *.pdf
+
+# LaTeX
+*.aux
+*.lof
+*.log
+*.lot
+*.out
+*.tex
+*.toc
+
 thesis.md
 !abyss2-appendix/*.pdf
