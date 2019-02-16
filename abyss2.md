@@ -106,24 +106,24 @@ Table: The sequence contiguity and number of breakpoints when aligned to GRCh38 
 
 Table: The scaffold contiguity and number of breakpoints when aligned to GRCh38 using BWA-MEM of the assemblies of GIAB HG004. {#tbl:scaffolds}
 
-| Assembly                            | NG50 (Mbp) | NGA50 (Mbp) | Breakpoints |
-|-------------------------------------|-----------:|------------:|------------:|
-| ABySS 1.0                           |  4.82      | 4.36        | 2,975       |
-| ABySS 2.0                           |  3.49      | 2.97        | 2,717       |
-| DISCOVAR *de novo* + ABySS-Scaffold | 10.42      | 6.32        | 3,085       |
-| DISCOVAR *de novo* + LINKS          |  3.08      | 2.44        | 2,655       |
-| DISCOVAR *de novo* + BESST          |  6.92      | 3.94        | 2,657       |
-| SOAPdenovo2                         |  0.17      | 0.10        | 11,219      |
+| Assembly                  | NG50 (Mbp) | NGA50 (Mbp) | Breakpoints |
+|---------------------------|-----------:|------------:|------------:|
+| ABySS 1.0                 |  4.82      | 4.36        | 2,975       |
+| ABySS 2.0                 |  3.49      | 2.97        | 2,717       |
+| DISCOVAR + ABySS-Scaffold | 10.42      | 6.32        | 3,085       |
+| DISCOVAR + LINKS          |  3.08      | 2.44        | 2,655       |
+| DISCOVAR + BESST          |  6.92      | 3.94        | 2,657       |
+| SOAPdenovo2               |  0.17      | 0.10        | 11,219      |
 
 Table: The scaffold contiguity and number of breakpoints when aligned to GRCh38 using BWA-MEM of the assemblies of GIAB HG004 with BioNano scaffolding. {#tbl:bionano}
 
-| Assembly                                      | NG50 (Mbp) | NGA50 (Mbp) | Breakpoints |
-|-----------------------------------------------|-----------:|------------:|------------:|
-| ABySS 1.0 + BioNano                           | 32.5       | 15.3        |  3,051      |
-| ABySS 2.0 + BioNano                           | 26.9       | 12.8        |  2,750      |
-| DISCOVAR *de novo* + ABySS-Scaffold + BioNano | 52.2       | 15.0        |  3,121      |
-| DISCOVAR *de novo* + LINKS + BioNano          | 25.7       | 13.6        |  2,735      |
-| DISCOVAR *de novo* + BESST + BioNano          | 37.8       |  9.3        |  2,672      |
+| Assembly                            | NG50 (Mbp) | NGA50 (Mbp) | Breakpoints |
+|-------------------------------------|-----------:|------------:|------------:|
+| ABySS 1.0 + BioNano                 | 32.5       | 15.3        |  3,051      |
+| ABySS 2.0 + BioNano                 | 26.9       | 12.8        |  2,750      |
+| DISCOVAR + ABySS-Scaffold + BioNano | 52.2       | 15.0        |  3,121      |
+| DISCOVAR + LINKS + BioNano          | 25.7       | 13.6        |  2,735      |
+| DISCOVAR + BESST + BioNano          | 37.8       |  9.3        |  2,672      |
 
 ## Scaffolding with Chromium Data
 
