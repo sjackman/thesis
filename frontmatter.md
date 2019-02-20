@@ -16,10 +16,19 @@ classoption: [oneside, openany]
 fontsize: 12pt
 header-includes: |
     \usepackage[section]{tocbibind}
+    \usepackage{tocloft}
     \usepackage[onehalfspacing]{setspace}
     \usepackage[all]{nowidow}
     \newcommand{\crefrangeconjunction}{--}
 ---
+
+\setlength{\cftfignumwidth}{30pt}
+\setlength{\cfttabnumwidth}{30pt}
+\renewcommand\cftchapdotsep{\cftdotsep}
+\renewcommand{\cftmarktoc}{\markboth{}{\hfill \contentsname \hfill}}
+\renewcommand{\cftmarklof}{\markboth{}{\hfill \listfigurename \hfill}}
+\renewcommand{\cftmarklot}{\markboth{}{\hfill \listtablename \hfill}}
+\renewcommand{\chaptermark}[1]{\markboth{}{\hfill \chaptername\ \thechapter.\ #1 \hfill}}
 
 \frontmatter
 
