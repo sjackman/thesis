@@ -41,7 +41,7 @@ Efficient Assembly of Large Genomes
 \vspace{1cm}
 
 by
-\\ Shaun D. Jackman
+\\ Shaun Dunn Jackman
 \\ B.A.Sc., Simon Fraser University, 2004
 \vspace{1cm}
 
@@ -63,11 +63,11 @@ The University of British Columbia
 \\ (Vancouver)
 \vspace{5mm}
 
-May 2019
+Feb 2019
 
 \vfill
 \normalsize
-Copyright 2019 Shaun Jackman
+\copyright\ Shaun Dunn Jackman, 2019
 \end{center}
 
 \newpage
@@ -123,37 +123,39 @@ I have developed two additional tools, UniqTag and ORCA. UniqTag assigns unique 
 
 The assembly of linked read and long read sequencing of large molecules of DNA have yielded substantial improvements in the quality of genome assembly projects.
 
+\newpage
+
 ## Lay Summary
 
 A DNA sequencing machine reads the ACGT nucleotides that compose the chromosomes of a genome, much as a digital camera converts a landscape to a sequence of ones and zeros. An ideal DNA sequencing machine would read an entire chromosome of DNA from beginning to end, with perfect fidelity. Practical DNA sequencing machines are able to read only snippets of DNA, and they make errors while reading the microscopic DNA, yielding imperfect sequence. I have developed software tools to reconstruct the true genome sequence from this imperfect DNA sequencing data. The program ABySS 2.0 reduces the memory (RAM) needed for genome assembly by ten fold compared to ABySS 1.0. The program Tigmint corrects genome sequence assembly errors using a sequencing strategy called linked reads. I apply these tools to assembling the genome sequence of human and western redcedar, whose genome is many times larger than human.
 
-## Preface
+\newpage
 
-All laboratory work, including sample preparation, library preparation, and sequencing, was conducted by collaborators.
+## Preface
 
 **Chapter 2**: ABySS 2.0.
 A version of this material has been published as Shaun D Jackman, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Sarah Yeo, S Austin Hammond, Golnaz Jahesh, Hamza Khan, Lauren Coombe, Rene L Warren, Inanc Birol (2017) ABySS 2.0: Resource-efficient assembly of large genomes using a Bloom filter. *Genome Research*, 27, 768–777 (<https://doi.org/10.1101/gr.214346.116>).
-SDJ and BPV are joint first authors. SDJ, BPV, and RLW drafted the manuscript. SDJ, BPV, RLW, SAH, and IB revised the manuscript. SDJ and BPV implemented ABySS 2.0. HM implemented ntHash. SDJ, LC, JC, RLW, and SY implemented ARCS. JC implemented JupiterPlot and created the JupiterPlot figures. IB supervised the project and secured funding. SDJ and BPV designed and executed the data analysis.
+SDJ and BPV are joint first authors. SDJ, BPV, and RLW drafted the manuscript. SDJ, BPV, RLW, SAH, and IB revised the manuscript. SDJ and BPV implemented ABySS 2.0. HM implemented ntHash. SDJ, LC, JC, RLW, and SY implemented ARCS. JC implemented JupiterPlot and created the JupiterPlot figures. IB supervised the project. SDJ and BPV designed and executed the data analysis.
 
 **Chapter 3**: Tigmint.
 A version of this material has been published as Shaun D Jackman, Lauren Coombe, Justin Chu, Rene L Warren, Benjamin P Vandervalk, Sarah Yeo, Zhuyi Xue, Hamid Mohamadi, Joerg Bohlmann, Steven JM Jones, Inanc Birol (2018) Tigmint: Correcting assembly errors using linked reads from large molecules. *BMC Bioinformatics*, 19 (<https://doi.org/10.1186/s12859-018-2425-6>).
-SDJ drafted the manuscript. SDJ and IB revised the manuscript. SDJ designed and executed the data analysis. SDJ, LC, and ZX performed exploratory data analysis. SDJ, LC, and JC implemented Tigmint. SDJ, LC, JC, RLW, and SY implemented ARCS. SDJ and BPV implemented ABySS 2.0. HM implemented ntHash. JC implemented JupiterPlot and created the JupiterPlot figure. JeB, SJMJ, and IB supervised the project and secured funding.
+SDJ drafted the manuscript. SDJ and IB revised the manuscript. SDJ designed and executed the data analysis. SDJ, LC, and ZX performed exploratory data analysis. SDJ, LC, and JC implemented Tigmint. SDJ, LC, JC, RLW, and SY implemented ARCS. SDJ and BPV implemented ABySS 2.0. HM implemented ntHash. JC implemented JupiterPlot and created the JupiterPlot figure. JeB, SJMJ, and IB supervised the project.
 
 **Chapter 4**: UniqTag.
 A version of this material has been published as Shaun D Jackman, Joerg Bohlmann, Inanc Birol (2014). UniqTag: Content-derived unique and stable identifiers for gene annotation. *PLOS ONE*, 10(5) (<https://doi.org/10.1371/journal.pone.0128026>).
-SDJ drafted the manuscript, developed the software, and designed and executed the data anlaysis. SDJ, JeB, and IB revised the manuscript. JeB and IB supervised the project and secured funding.
+SDJ drafted the manuscript, developed the software, and designed and executed the data anlaysis. SDJ, JeB, and IB revised the manuscript. JeB and IB supervised the project.
 
 **Chapter 5**: ORCA.
 A version of this material has been submitted for publication as Shaun D Jackman, Tatyana Mozgacheva, Susie Chen, Brendan O'Huiginn, Lance Bailey, Inanc Birol, Steven JM Jones. ORCA: A Comprehensive Bioinformatics Container Environment for Education and Research.
-SDJ and TM are joint first authors of the manuscript. SDJ lead the development of ORCA, Linuxbrew, and Brewsci/bio. SDJ, TM, SC, and BOH implemented ORCA. SDJ, TM, IB, and SJMJ revised the manuscript. LB, IB, and SJMJ supervised the project. SJMJ secured funding.
+SDJ and TM are joint first authors of the manuscript. SDJ lead the development of ORCA, Linuxbrew, and Brewsci/bio. SDJ, TM, SC, and BOH implemented ORCA. SDJ, TM, IB, and SJMJ revised the manuscript. LB, IB, and SJMJ supervised the project.
 
 **Chapter 6**: White spruce organelles.
 A version of this material has been published as Shaun D Jackman, Rene Warren, Ewan Gibb, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Anthony Raymond, Stephen Pleasance, Robin Coope, Mark R Wildung, Carol E Ritland, Jean Bousquet, Steven JM Jones, Joerg Bohlmann, Inanc Birol (2015). Organellar Genomes of White Spruce (Picea glauca): Assembly and Annotation. Genome Biology and Evolution, 8(1), 29–41 (<https://doi.org/10.1093/gbe/evv244>).
-SDJ and RW drafted the manuscript. SDJ, RW, and IB revised the manuscript. SDJ and RW assembled the plastid genome. SDJ annotated the plastid genome, assembled and annotated the mitochondrial genome, and designed and executed the data analysis. SDJ and Martin Krzywinski developed the data visualization of the genes of the white spruce mitochondrion. SJMJ, JoB, and IB supervised the project and secured funding.
+SDJ and RW drafted the manuscript. SDJ, RW, and IB revised the manuscript. SDJ and RW assembled the plastid genome. SDJ annotated the plastid genome, assembled and annotated the mitochondrial genome, and designed and executed the data analysis. SDJ and Martin Krzywinski developed the data visualization of the genes of the white spruce mitochondrion. SP and RC supervised the library preparation and sequencing. SJMJ, JoB, and IB supervised the project.
 
 **Chapter 7**: Sitka spruce mitochondrion.
 A version of this material is intended for publication as Shaun D Jackman, Lauren Coombe, René L Warren, Heather Kirk, Eva Trinh, Tina McLeod, Stephen Pleasance, Pawan Pandoh, Yongjun Zhao, Robin J Coope, Jean Bousquet, Joerg Bohlmann, Steven JM Jones, Inanc Birol. Largest Complete Mitochondrial Genome of a Gymnosperm, Sitka Spruce (*Picea sitchensis*), Assembled Using Long Reads.
-SDJ drafted the manuscript. SDJ, LC, RLW, SP, JoB, and IB revised the manuscript. HK, ET, and TM constructed the libraries and sequenced the DNA. SP, PP, and YZ supervised the sequencing. SDJ assembled and annotated the mitochondrial genome. SDJ designed and executed the data analysis. JeB, JoB, SJMJ, and IB supervised the project and secured funding.
+SDJ drafted the manuscript. SDJ, LC, RLW, SP, JoB, and IB revised the manuscript. HK, ET, and TM constructed the libraries and sequenced the DNA. SP, PP, and YZ supervised the sequencing. SDJ assembled and annotated the mitochondrial genome. SDJ designed and executed the data analysis. JeB, JoB, SJMJ, and IB supervised the project.
 
 **Chapter 8**: Western redcedar.
 This material is unpublished work.
@@ -175,6 +177,8 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 
 \markboth{}{}
 
+\newpage
+
 ## Abbreviations
 
 | **BAM**: binary alignment map
@@ -193,11 +197,15 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 | **SMS**: single-molecule sequencing
 | **SRA**: Sequence Read Archive
 
+\newpage
+
 ## Glossary
 
 | **N50**: Half of the genome assembly is in sequences at least as large as the N50. The N50 is the weighted median of the sequence lengths, where the weight is the length of each sequence.
 | **NG50**: Half of the estimated genome size *G* is assembled in sequences at least as large as the NG50. The NG50 is equivalent to the N50 if *G* is the size of the assembled sequence. The NG50 penalizes assemblies that are smaller than the estimated genome size.
 | **NGA50**: After aligning the assembly to a reference, half of the estimated genome size *G* is in alignments blocks at least as large as the NGA50. The NGA50 penalizes assemblies that are structurally different than the reference.
+
+\newpage
 
 ## Acknowledgements
 
@@ -216,6 +224,8 @@ I thank my supervisor Inanc Birol for his guidance and support throughout my PhD
 **Chapter 7**: Sitka spruce mitochondrion. Funding was provided by Genome Canada, Genome Quebec, Genome British Columbia, and Genome Alberta for the Spruce-Up (243FOR) Project (<http://www.spruce-up.ca>).
 
 **Chapter 8**: Western redcedar. This work was funded by the United States Department of Energy (DOE) Joint Genome Institute (JGI).
+
+\newpage
 
 ## Dedication
 
