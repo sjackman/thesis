@@ -1,4 +1,1 @@
-\backmatter
-
-\chapter{References}
-\chaptermark{References}
+\end{appendices}

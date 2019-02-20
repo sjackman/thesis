@@ -15,8 +15,8 @@ documentclass: book
 classoption: [oneside, openany]
 fontsize: 12pt
 header-includes: |
-    \usepackage[section]{tocbibind}
     \usepackage{tocloft}
+    \usepackage[titletoc]{appendix}
     \usepackage[onehalfspacing]{setspace}
     \usepackage[all]{nowidow}
     \newcommand{\crefrangeconjunction}{--}
