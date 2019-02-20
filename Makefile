@@ -17,6 +17,7 @@ thesis.md: frontmatter.md introduction.md abyss2.md tigmint.md uniqtag.md orca.m
 		-e 's/^title: "(.*)"/# \1/' \
 		-e 's/^chaptermark: "(.*)"/\\chaptermark{\1}/' \
 		-e '/^author:/,/^---$$/d' \
+		-e '/^## Abstract/d' \
 		-e '/^## References/d' \
 		-e '/^---$$/d' $^ >$@
 
