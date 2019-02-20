@@ -40,6 +40,8 @@ def main():
         # Single space tables.
         if line.startswith(r"\begin{longtable}"):
             print(r"\begin{singlespace}")
+            # Use a smaller font for tables.
+            print("\small")
 
         # Add short captions for the lists of figures, listings, and tables.
         if line.startswith(r"\caption{"):
