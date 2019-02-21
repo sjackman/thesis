@@ -196,6 +196,7 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 | **SAM**: sequence alignment map
 | **SMS**: single-molecule sequencing
 | **SRA**: Sequence Read Archive
+| **WGS**: whole genome shotgun
 
 \newpage
 

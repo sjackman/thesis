@@ -16,7 +16,27 @@ We assemble an 8 Gbp draft genome of western redcedar (*Thuja plicata*) from pai
 
 # Introduction
 
-Advances in genomics have yielded improvements in agronomy, particularly in the discovery of genetic variants for selective breeding to improve desirable crop traits [@Morrell_2011]. Plants have a number of genomic features that may make their assembly difficult. Polyploidy, repeat and intron expansion, and large genome size name a few challenges. Bread wheat is hexaploid [@IWGSC_2014]. Nearly 85% of the maize genome is composed of transposable elements [@Schnable_2009]. The onion genome is 16 Gbp [@Jo_2017], and conifer genomes can exceed 20 Gbp [@Birol_2013]. Although conifers are socially and economically important, the large size of their genomes make them expensive to sequence and difficult to assemble and have until recently excluded them from the rapidly advancing genomics revolution in agronomy.
+Advances in genomics have yielded improvements in agronomy, particularly in the discovery of genetic variants for selective breeding to improve desirable crop traits [@Morrell_2011]. Plants have a number of genomic features that may make their assembly difficult. Polyploidy, repeat and intron expansion, and large genome size name a few challenges. Bread wheat is hexaploid [@IWGSC_2014]. Nearly 85% of the maize genome is composed of transposable elements [@Schnable_2009]. The onion genome is 16 Gbp [@Jo_2017], and conifer genomes can exceed 20 Gbp [@Birol_2013]. Although conifers are socially and economically important, the large size of their genomes make them expensive to sequence and difficult to assemble. This challenge has until recently largely excluded conifers from the rapidly advancing genomics revolution in agronomy.
+
+The first conifer genomes were sequenced in 2013, with three genomes being assembled within a year: interior white spruce [*Picea glauca* genotype PG29, @Birol_2013], Norway spruce [*Picea abies*, @Nystedt_2013], and loblolly pine [*Pinus taeda*, @Zimin_2014]. Interior white spruce was sequenced using Illumina paired-end and mate-pair sequencing and assembled using ABySS 1.3.5 [@Simpson_2009]. Norway spruce used a hybrid whole genome shotgun (WGS) and hierarchical sequencing strategy, making using of both shotgun Illumina paired-end and mate-pair sequencing, as well as paired-end sequencing of fosmid pools. The fosmid pools and WGS were assembled using CLC Assembly Cell from CLC bio, scaffolded using BESST [@Sahlin_2014], and the fosmid and WGS assemblies merged using GAM-NGS [@Vicedomini_2013]. Loblolly pine was sequenced using Illumina paired-end and mate-pair sequencing and assembled using MaSuRCA [@Zimin_2013] and a modified version of the CABOG assembler [@Miller_2008], which is derived from the Celera Assembler. Two additional species were sequenced a few years later: sugar pine [*Pinus lambertiana*, @Stevens_2016] and Douglas fir [*Pseudotsuga menziesii*, @Neale_2017]. Both sugar pine and Douglas fir were sequenced using Illumina paired-end and mate-pair sequencing and assembled using MaSuRCA and SOAPdenovo2 [@Luo_2012].
+
+An improved assembly of interior white spruce genotype PG29 was scaffolded using the assembly of another white spruce genotype WS77111, sequenced using Illumina paired-end and mate-pair sequencing and assembled using ABySS 1.5.2 [@Warren_2015_Improved]. An improved assembly of loblolly pine used a hybrid strategy of both Illumina sequencing and single molecule sequencing from PacBio [@Zimin_2017], and was assembled using an updated version of MaSuRCA [@Zimin_2017_MaSuRCA] intended for hybrid assembly of Illumina and PacBio sequencing. An improved assembly of sugar pine [@Crepeau_2017] used linked reads from 10x Genomics GemCode, a previous version of their Chromium technology, to scaffold the previous assembly using fragScaff [@Adey_2014]. The assembly size and scaffold N50 of these nine genome assemblies are shown in @tbl:conifer-assemblies.
+
+Table: Nine genome assemblies of six conifer species spanning five years.<br> ^1^initial assembly ^2^improved assembly {#tbl:conifer-assemblies}
+
+| Year | Species                 | Assembly size | Scaffold N50 |
+|-----:|-------------------------|--------------:|-------------:|
+| 2013 | Norway spruce           |        12 Gbp |        5 kbp |
+| 2013 | Interior white spruce^1^|        21 Gbp |       20 kbp |
+| 2014 | Loblolly pine^1^        |        20 Gbp |       67 kbp |
+| 2015 | White spruce            |        22 Gbp |       20 kbp |
+| 2015 | Interior white spruce^2^|        21 Gbp |       83 kbp |
+| 2016 | Sugar pine^1^           |        25 Gbp |      247 kbp |
+| 2017 | Loblolly pine^2^        |        21 Gbp |      108 kbp |
+| 2017 | Douglas fir             |        15 Gbp |      341 kbp |
+| 2017 | Sugar pine^2^           |        25 Gbp |    2,510 kbp |  
+
+This chapter describes the technical aspects of a preliminary draft assembly. It does not attempt to analyze or interpret the western redcedar genome.
 
 # Methods
 
@@ -84,5 +104,9 @@ Table: 870 (60%) of core single-copy genes are present, either fully or partiall
 | Fragmented                   |  6.5%   |    94 |
 | Missing                      | 39.6%   |   570 |
 | **Total**                    |  100%   | 1,440 |
+
+# Conclusion
+
+This preliminary draft assembly of the western redcedar genome is one of one only two conifer genome assemblies to report a scaffold N50 measured in megabases: 2.51 Mbp for the improved sugar pine assembly [@Neale_2017] and 2.31 Mbp for this western redcedar assembly. Both of these assemblies employed a hybrid assembly of short reads and linked reads to assemble a highly contiguous draft assembly of a multi-gigabase conifer genome. They demonstrate an impressive level of contiguity achieved using only high-throughput sequencing, and exemplify an economical strategy for future sequencing projects of large plant genomes.
 
 # References
