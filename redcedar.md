@@ -12,7 +12,7 @@ tblPrefix: ["Table", "Tables"]
 
 # Abstract
 
-We assemble an 8 Gbp draft genome of western redcedar (*Thuja plicata*) from paired-end, mate-pair, and linked reads. ABySS is used to assemble contigs from paired-end reads, and mate-pairs reads are used to scaffold the genome. Linked reads from 10x Genomics Chromium are used to correct misassemblies and scaffold the genome. Half of the assembled sequence is in 1,035 scaffolds larger than 2.31 Mbp (N50). Sixty percent of core single-copy genes (BUSCOs) are present, either fully or partially, in the draft assembly. We demonstrate that an assembly with megabase scaffold contiguity of a conifer genome is possible using short read and linked read sequencing.
+We assemble an 8 Gbp draft genome of western redcedar (*Thuja plicata*) from paired-end, mate-pair, and linked reads. ABySS is used to assemble contigs from paired-end reads, and mate-pairs reads are used to scaffold the genome. Linked reads from 10x Genomics Chromium are used to correct misassemblies and scaffold the genome. Half of the assembled sequence is in 1,035 scaffolds larger than 2.31 Mbp (N50). Sixty percent of core single-copy genes (BUSCOs) are present, either fully or partially, in the draft assembly. We demonstrate an assembly with megabase scaffold contiguity of a conifer genome using short read and linked read sequencing. This chapter describes the technical aspects of a preliminary draft assembly. It does not attempt to analyze or interpret the western redcedar genome.
 
 # Introduction
 
@@ -35,8 +35,6 @@ Table: Nine genome assemblies of six conifer species spanning five years.<br> ^1
 | 2017 | Loblolly pine^2^        |        21 Gbp |      108 kbp |
 | 2017 | Douglas fir             |        15 Gbp |      341 kbp |
 | 2017 | Sugar pine^2^           |        25 Gbp |    2,510 kbp |  
-
-This chapter describes the technical aspects of a preliminary draft assembly. It does not attempt to analyze or interpret the western redcedar genome.
 
 # Methods
 
