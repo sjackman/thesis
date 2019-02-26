@@ -63,7 +63,7 @@ The University of British Columbia
 \\ (Vancouver)
 \vspace{5mm}
 
-Feb 2019
+February 2019
 
 \vfill
 \normalsize
