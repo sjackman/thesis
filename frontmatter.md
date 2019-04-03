@@ -104,11 +104,11 @@ in Bioinformatics
 | Supervisory Committee Member
 \vspace{5mm}
 
-| Paul Pavlidis, Michael Smith Laboratories
+| Keith Adams, Botany
 | University Examiner
 \vspace{5mm}
 
-| Keith Adams, Botany
+| Patricia Schulte, Zoology
 | University Examiner
 
 \newpage
