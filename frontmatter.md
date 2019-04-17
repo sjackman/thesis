@@ -86,30 +86,31 @@ in Bioinformatics
 \vspace{5mm}
 
 **Examining Committee:**
-\vspace{5mm}
 
 | Inanc Birol, Medical Genetics
 | Co-supervisor
-\vspace{5mm}
 
 | J&ouml;rg Bohlmann, Michael Smith Laboratories
 | Co-supervisor
-\vspace{5mm}
 
 | Steven Hallam, Microbiology & Immunology
 | Supervisory Committee Member
-\vspace{5mm}
-
-| Steven Jones, Medical Genetics
-| Supervisory Committee Member
-\vspace{5mm}
 
 | Keith Adams, Botany
 | University Examiner
-\vspace{5mm}
 
 | Patricia Schulte, Zoology
 | University Examiner
+
+| C. Titus Brown, Population Health and Reproduction
+| University of California, Davis, Genome Center
+| External Examiner
+\vspace{5mm}
+
+**Additional Supervisory Committee Members:**
+
+| Steven Jones, Medical Genetics
+| Supervisory Committee Member
 
 \newpage
 
