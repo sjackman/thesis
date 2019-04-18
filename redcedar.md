@@ -103,7 +103,7 @@ Table: 870 (60%) of core single-copy genes are present, either fully or partiall
 | Missing                      | 39.6%   |   570 |
 | **Total**                    |  100%   | 1,440 |
 
-# Conclusion
+# Conclusions
 
 This preliminary draft assembly of the western redcedar genome is one of one only two conifer genome assemblies to report a scaffold N50 measured in megabases: 2.51 Mbp for the improved sugar pine assembly [@Neale_2017] and 2.31 Mbp for this western redcedar assembly. Both of these assemblies employed a hybrid assembly of short reads and linked reads to assemble a highly contiguous draft assembly of a multi-gigabase conifer genome. They demonstrate an impressive level of contiguity achieved using only high-throughput sequencing, and exemplify an economical strategy for future sequencing projects of large plant genomes.
 
