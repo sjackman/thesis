@@ -34,6 +34,9 @@ def main():
         if line == r"\maketitle":
             continue
 
+        # Frontmatter sections should appear as chapters in the Contents.
+        line = line.replace(r"\addcontentsline{toc}{section}", r"\addcontentsline{toc}{chapter}")
+
         # Fix \begin{appendices} and \end{appendices}.
         line = line.replace(r"\textbackslash{}begin\{appendices\}", r"\begin{appendices}")
         line = line.replace(r"\textbackslash{}end\{appendices\}", r"\end{appendices}")
