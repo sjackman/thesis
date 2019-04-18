@@ -37,6 +37,8 @@ def main():
         # Fix \begin{appendices} and \end{appendices}.
         line = line.replace(r"\textbackslash{}begin\{appendices\}", r"\begin{appendices}")
         line = line.replace(r"\textbackslash{}end\{appendices\}", r"\end{appendices}")
+        line = line.replace(r"\textbackslash begin\{appendices\}", r"\begin{appendices}")
+        line = line.replace(r"\textbackslash end\{appendices\}", r"\end{appendices}")
 
         # Prevent page breaks in tables.
         line = line.replace("tabularnewline", "tabularnewline*")
