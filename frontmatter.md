@@ -14,6 +14,8 @@ cref: true
 documentclass: book
 classoption: [oneside, openany]
 fontsize: 12pt
+numbersections: true
+secnumdepth: 0
 header-includes: |
     \usepackage{tocloft}
     \usepackage[titletoc]{appendix}
