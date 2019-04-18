@@ -14,6 +14,8 @@ cref: true
 documentclass: book
 classoption: [oneside, openany]
 fontsize: 12pt
+numbersections: true
+secnumdepth: 0
 header-includes: |
     \usepackage{tocloft}
     \usepackage[titletoc]{appendix}
@@ -114,7 +116,7 @@ in Bioinformatics
 
 \newpage
 
-## Abstract
+## Abstract {-}
 
 Genome sequence assembly presents a fascinating and frequently-changing challenge. As DNA sequencing technologies evolve, the bioinformatics methods used to assemble sequencing data must evolve along with it. Sequencing technology has evolved from slab gel sequencing, to capillary sequencing, to short read sequencing by synthesis, to long-read and linked-read single-molecule sequencing. Each evolutionary jump in sequencing technology required developing new bioinformatic tools to address the unique characteristics of its sequencing data. This work reports the development of efficient methods to assemble short-read and linked-read sequencing data, named ABySS 2.0 and Tigmint. ABySS 2.0 reduces the memory requirements of short-read genome sequencing assembly by ten fold compared to ABySS 1.0. It does so by using a Bloom filter probabilistic data structure to represent a de Bruijn graph. Tigmint uses linked reads to identify large-scale errors in a genome sequence assembly. Correcting assembly errors using Tigmint before scaffolding improves both the contiguity and correctness of a human genome assembly compared to scaffolding without correction. I have also applied these methods to assemble the 12 gigabase genome of western redcedar (*Thuja plicata*), which is four times the size of the human genome.
 
@@ -126,13 +128,13 @@ The assembly of linked read and long read sequencing of large molecules of DNA h
 
 \newpage
 
-## Lay Summary
+## Lay Summary {-}
 
 A DNA sequencing machine reads the ACGT nucleotides that compose the chromosomes of a genome, much as a digital camera converts a landscape to a sequence of ones and zeros. An ideal DNA sequencing machine would read an entire chromosome of DNA from beginning to end, with perfect fidelity. Practical DNA sequencing machines are able to read only snippets of DNA, and they make errors while reading the microscopic DNA, yielding imperfect sequence. I have developed software tools to reconstruct the true genome sequence from this imperfect DNA sequencing data. The program ABySS 2.0 reduces the memory (RAM) needed for genome assembly by ten fold compared to ABySS 1.0. The program Tigmint corrects genome sequence assembly errors using a sequencing strategy called linked reads. I apply these tools to assembling the genome sequence of human and western redcedar, whose genome is many times larger than human.
 
 \newpage
 
-## Preface
+## Preface {-}
 
 **Chapter 2**: ABySS 2.0.
 A version of this material has been published as Shaun D Jackman, Benjamin P Vandervalk, Hamid Mohamadi, Justin Chu, Sarah Yeo, S Austin Hammond, Golnaz Jahesh, Hamza Khan, Lauren Coombe, Rene L Warren, Inanc Birol (2017) ABySS 2.0: Resource-efficient assembly of large genomes using a Bloom filter. *Genome Research*, 27, 768–777 (<https://doi.org/10.1101/gr.214346.116>).
@@ -165,14 +167,17 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 \newpage
 
 \tableofcontents
+\addcontentsline{toc}{section}{Contents}
 
 \newpage
 
 \listoftables
+\addcontentsline{toc}{section}{List of Tables}
 
 \newpage
 
 \listoffigures
+\addcontentsline{toc}{section}{List of Figures}
 
 \newpage
 
@@ -180,7 +185,7 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 
 \newpage
 
-## Abbreviations
+## Abbreviations {-}
 
 | **BAM**: binary alignment map
 | **BED**: browser extensible data
@@ -201,7 +206,7 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 
 \newpage
 
-## Glossary
+## Glossary {-}
 
 | **N50**: Half of the genome assembly is in sequences at least as large as the N50. The N50 is the weighted median of the sequence lengths, where the weight is the length of each sequence.
 | **NG50**: Half of the estimated genome size *G* is assembled in sequences at least as large as the NG50. The NG50 is equivalent to the N50 if *G* is the size of the assembled sequence. The NG50 penalizes assemblies that are smaller than the estimated genome size.
@@ -209,7 +214,7 @@ SDJ drafted this chapter, assembled the genome, and designed and executed the da
 
 \newpage
 
-## Acknowledgements
+## Acknowledgements {-}
 
 I thank my supervisor Inanc Birol for his guidance and support throughout my PhD, which I have thoroughly enjoyed thanks to his kind and encouraging nature. I thank my co-supervisor Joerg Bohlmann for providing a biological context for my computational work. I thank my supervisory committee members, Steven Hallam and Steven Jones, for their feedback on this thesis. I acknowledge the contributions of my colleagues with whom I have collaborated to write the papers found in this thesis. I am thankful to have spent time with my fellow students and friends in the Birol lab. I am grateful to my collaborators and colleagues in the wet lab, without whom I would have no sequencing data to analyze. Finally, I am grateful for the financial support of the Natural Sciences and Engineering Research Council of Canada (NSERC), who funded my studies, and the agencies that funded the individual research projects, described below.
 
@@ -229,7 +234,7 @@ I thank my supervisor Inanc Birol for his guidance and support throughout my PhD
 
 \newpage
 
-## Dedication
+## Dedication {-}
 
 I dedicate this work to my joyful and passionate wife and partner in life, Liz, my inquisitive wee scientists, Daphne and Jake, my supportive and inspiring parents, Mike and Agnes, and my bright and cheerful siblings, Katie, Thomas, Meghan, and Ashley. I am grateful to everyone who was helped watch and raise my children, Nana, Papa, and Uncle Landon in particular. My life is full of fun and laughter thanks to you all!
 
