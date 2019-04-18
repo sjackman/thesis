@@ -34,9 +34,6 @@ def main():
         if line == r"\maketitle":
             continue
 
-        # Number chapters.
-        line = line.replace(r"\setcounter{secnumdepth}{-2}", r"\setcounter{secnumdepth}{0}")
-
         # Fix \begin{appendices} and \end{appendices}.
         line = line.replace(r"\textbackslash{}begin\{appendices\}", r"\begin{appendices}")
         line = line.replace(r"\textbackslash{}end\{appendices\}", r"\end{appendices}")
