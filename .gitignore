@@ -13,5 +13,6 @@
 *.tex
 *.toc
 
-thesis.md
 !abyss2-appendix/*.pdf
+!thesis.md
+!thesis.tidy.tex
