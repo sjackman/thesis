@@ -14,6 +14,6 @@ DNA sequencing machines read the A, C, G, and T nucleotides that compose chromos
 - [Chapter 5](orca.md): ORCA <https://doi.org/10.1093/bioinformatics/btz278>
 - [Chapter 6](whitespruce.md): White spruce organelles <https://doi.org/10.1093/gbe/evv244>
 - [Chapter 7](psitchensismt.md): Sitka spruce mitochondrion <https://doi.org/10.1093/gbe/evaa108>
-- [Chapter 8](redcedar.md): Western redcedar
+- [Chapter 8](redcedar.md): Western redcedar <https://doi.org/10.1101/gr.276358.121>
 - [Chapter 9](conclusions.md): Conclusions
 - [Appendix A](abyss2-appendix.md): ABySS 2.0: Supplemental Material
